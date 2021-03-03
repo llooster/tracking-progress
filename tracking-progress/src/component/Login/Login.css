@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+button {
+    width: 130px;
+    height: 65px;
+    font-size: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    font-weight: 300;
+    display: flex;
+    text-align: center;
+}
