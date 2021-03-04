@@ -11,7 +11,7 @@ class Login extends Component {
                 </div>
                 <div className="Step1">
                     <div className="explain">
-                        <div>{this.props.step}</div>
+                        <div>Step 1. Login</div>
                         <span>smartclass에서 로그인 합니다.</span>
                     </div>
                     <button
