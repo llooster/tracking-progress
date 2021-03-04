@@ -1,16 +1,19 @@
-// import { render, screen } from "@testing-library/react";
-import React, { Component } from 'react';
-import Login from './Login';
+import React, { Component } from "react";
+import Login from "./Login/Login";
+// import GetValue from "./GetTheValue/GetValue";
 
 class App extends Component {
-  render() {
-    return <Login />;
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            page: {
+                id: 1,
+            },
+        };
+    }
+    render() {
+        return <Login />;
+    }
 }
-// test("renders learn react link", () => {
-//     render(<App />);
-//     const linkElement = screen.getByText(/learn react/i);
-//     expect(linkElement).toBeInTheDocument();
-// });
 
 export default App;
