@@ -39,7 +39,7 @@
     user-select: none;
     text-align: center;
 }
-.Step1 {
+.Step {
     width: 65%;
     max-width: 780px;
     min-width: 510px;
@@ -50,8 +50,9 @@
     justify-content: center;
     align-items: center;
 }
-.Step1 .explain {
-    width: 50%;
+.Step .explain {
+    width: 100%;
+    height: 80px;
     position: absolute;
     top: 50px;
     left: 30px;
@@ -61,13 +62,14 @@
     color: rgb(103, 103, 103);
     margin-bottom: 10px;
 }
-.explain span:last-child {
+.explain span,
+.contents {
     position: absolute;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(103, 103, 103);
-    left: 5px;
+    left: 2px;
 }
-.Step1 button:nth-child(2) {
+.Step button {
     font-size: 20px;
     color: gray;
     width: 300px;
@@ -77,10 +79,29 @@
     background-color: #fff;
     cursor: pointer;
 }
-.Step1 button:nth-child(2):hover {
+.Step button:nth-child(2):hover {
     box-shadow: 0 0 3px 0 rgb(121, 121, 121);
 }
-.Step1 button:last-child {
+.contents {
+    width: 100%;
+    height: auto;
+    margin-left: 30px;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    color: rgb(136, 136, 136);
+}
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+h2 a {
+    text-decoration: underline;
+    color: rgb(0, 0, 223);
+    font-weight: 500;
+}
+
+.Step > button:last-child {
     position: absolute;
     bottom: 80px;
     right: 50px;
@@ -93,6 +114,39 @@
     background-color: #fff;
     cursor: pointer;
 }
-.Step1 button:last-child:hover {
+.Step button:last-child:hover {
     box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+}
+
+.moodle {
+    color: rgb(103, 103, 103);
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+.inputBox .input {
+    margin-left: 35px;
+}
+.input {
+    width: 100%;
+}
+.input input {
+    display: inline-block;
+    width: 450px;
+    min-width: 200px;
+    height: 45px;
+    border: solid gray 0.5px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+.input button {
+    margin-left: 5px;
+    color: rgb(103, 103, 103);
+    background-color: rgb(232, 232, 232);
+    border: solid gray 0.5px;
+    border-radius: 8px;
+    width: 80px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 500;
 }
