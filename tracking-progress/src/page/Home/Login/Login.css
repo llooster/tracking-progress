@@ -116,6 +116,7 @@ h2 a {
 }
 .Step button:last-child:hover {
     box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+    font-weight: 700;
 }
 
 .moodle {

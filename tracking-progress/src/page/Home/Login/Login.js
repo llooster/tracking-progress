@@ -3,7 +3,7 @@ import "./Login.css";
 
 class Login extends Component {
     render() {
-        const { id, step, explain } = this.props;
+        var { id, explain, next } = this.props;
         return (
             <div className="whole">
                 <div className="Tracking-Progress">
@@ -11,8 +11,8 @@ class Login extends Component {
                 </div>
                 <div className="Step">
                     <div className="explain">
-                        <div>Step 1. Login</div>
-                        <span>smartclass에서 로그인 합니다.</span>
+                        <div>{step}</div>
+                        <span>{explain}</span>
                     </div>
                     <button
                         onClick={function (e) {
@@ -21,9 +21,7 @@ class Login extends Component {
                     >
                         OPEN lms.induk.ac.kr
                     </button>
-                    <button className="button">
-                        로그인 완료 후 클릭하세요!
-                    </button>
+                    <button className="button">{next}</button>
                 </div>
             </div>
         );

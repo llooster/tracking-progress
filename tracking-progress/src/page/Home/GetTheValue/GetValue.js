@@ -3,6 +3,7 @@ import "../Login/Login.css";
 
 class GetValue extends Component {
     render() {
+        var { step, explain, next } = this.props;
         return (
             <div className="whole">
                 <div className="Tracking-Progress">
@@ -10,12 +11,8 @@ class GetValue extends Component {
                 </div>
                 <div className="Step">
                     <div className="explain">
-                        {/* <div>Step 1. Login</div> */}
-                        <div>Step 2. Get the Value</div>
-                        <span>
-                            크롤링을 위한 값을 가져옵니다. 아래는 Mac / Chrome
-                            기준입니다.
-                        </span>
+                        <div>{step}</div>
+                        <span>{explain}</span>
                     </div>
                     <div className="contents">
                         <h2>
@@ -43,7 +40,7 @@ class GetValue extends Component {
                     >
                         OPEN lms.induk.ac.kr
                     </button> */}
-                    <button>위 과정 완료 후 클릭!</button>
+                    <button>{next}</button>
                 </div>
             </div>
         );
