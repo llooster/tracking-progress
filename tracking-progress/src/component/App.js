@@ -19,18 +19,14 @@ class App extends Component {
         next: ["로그인 완료 후 클릭하세요!", "위 과정 완료 후 클릭!"],
         moodle: "",
     };
-    // test = () => {
-    //   var {value} = this.state;
-
-    // }
     inputValue = () => {
-        const { moodle } = this.state;
+        // const { moodle } = this.state;
         return console.log(document.getElementById("inputValue").value);
     };
     render() {
         // console.log("moodle :>> ", moodle);
         var { inputValue } = this;
-        var { id, step, explain, moodle } = this.state;
+        // var { id, step, explain, moodle } = this.state;
         return (
             // <Login
             //     step={this.state.step[0]}

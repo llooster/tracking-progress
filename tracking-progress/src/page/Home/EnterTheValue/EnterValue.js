@@ -3,7 +3,7 @@ import "../Login/Login.css";
 
 class EnterValue extends Component {
     render() {
-        const { step, explain, value, moodle } = this.props;
+        const { step, explain, value } = this.props;
         return (
             <div className="whole">
                 <div className="Tracking-Progress">
