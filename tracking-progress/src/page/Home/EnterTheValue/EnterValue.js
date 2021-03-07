@@ -3,7 +3,7 @@ import "../Login/Login.css";
 
 class EnterValue extends Component {
     render() {
-        const { step, explain, value } = this.props;
+        const { step, explain, inputValue, value, enterKey } = this.props;
         return (
             <div className="whole">
                 <div className="Tracking-Progress">
@@ -21,9 +21,12 @@ class EnterValue extends Component {
                                 type="text"
                                 id="inputValue"
                                 placeholder="MoodleSession을 입력해주세요"
+                                onChange={inputValue}
+                                onKeyPress={enterKey}
                             ></input>
                             <button
                                 onClick={function (e) {
+                                    // inputValue();
                                     value();
                                 }}
                             >

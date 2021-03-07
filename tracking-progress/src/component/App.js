@@ -19,14 +19,26 @@ class App extends Component {
         next: ["로그인 완료 후 클릭하세요!", "위 과정 완료 후 클릭!"],
         moodle: "",
     };
-    inputValue = () => {
-        // const { moodle } = this.state;
-        return console.log(document.getElementById("inputValue").value);
+    inputValue = (e) => {
+        this.setState({
+            moodle: e.target.value,
+        });
+    };
+    value = () => {
+        var { moodle } = this.state;
+        console.log(moodle);
+    };
+    enterKey = (e) => {
+        if (e.key === "Enter") {
+            this.value();
+            // (엔터키 활성화)
+        }
     };
     render() {
         // console.log("moodle :>> ", moodle);
-        var { inputValue } = this;
-        // var { id, step, explain, moodle } = this.state;
+        var { inputValue, value } = this;
+        // var { moodle } = this.state;
+        // var { step, explain, moodle } = this.state;
         return (
             // <Login
             //     step={this.state.step[0]}
@@ -41,7 +53,9 @@ class App extends Component {
             <EnterValue
                 step={this.state.step[2]}
                 explain={this.state.explain[2]}
-                value={inputValue}
+                inputValue={inputValue}
+                value={value}
+                enterKey={this.enterKey}
             />
         );
     }
