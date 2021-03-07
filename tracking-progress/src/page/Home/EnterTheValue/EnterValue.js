@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "../Login/Login.css";
+import LeftBar from "../../../component/LeftBar";
 
 class EnterValue extends Component {
     render() {
         const { step, explain, inputValue, value, enterKey } = this.props;
         return (
             <div className="whole">
-                <div className="Tracking-Progress">
-                    <div className="text">Tracking Progress</div>
-                </div>
+                <LeftBar />
                 <div className="Step">
                     <div className="explain">
                         <div>{step}</div>
@@ -23,9 +22,9 @@ class EnterValue extends Component {
                                 placeholder="MoodleSession을 입력해주세요"
                                 onChange={inputValue}
                                 onKeyPress={enterKey}
-                            ></input>
+                            />
                             <button
-                                onClick={function (e) {
+                                onClick={(e) => {
                                     // inputValue();
                                     value();
                                 }}

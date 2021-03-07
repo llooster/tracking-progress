@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-// import Login from "../page/Home/Login/Login";
-// import GetValue from "../page/Home/GetTheValue/GetValue";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Login from "../page/Home/Login/Login";
+import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         next: ["로그인 완료 후 클릭하세요!", "위 과정 완료 후 클릭!"],
         moodle: "",
     };
+
     inputValue = (e) => {
         this.setState({
             moodle: e.target.value,
@@ -36,27 +38,35 @@ class App extends Component {
     };
     render() {
         // console.log("moodle :>> ", moodle);
-        var { inputValue, value } = this;
+        const { inputValue, value, abc } = this;
         // var { moodle } = this.state;
-        // var { step, explain, moodle } = this.state;
+        const { step, explain, moodle } = this.state;
         return (
-            // <Login
-            //     step={this.state.step[0]}
-            //     explain={this.state.explain[0]}
-            //     next={this.state.next[0]}
-            // />
-            // <GetValue
-            //     step={this.state.step[1]}
-            //     explain={this.state.explain[1]}
-            //     next={this.state.next[1]}
-            // />
-            <EnterValue
-                step={this.state.step[2]}
-                explain={this.state.explain[2]}
-                inputValue={inputValue}
-                value={value}
-                enterKey={this.enterKey}
-            />
+            <Switch>
+                <Route path="/">
+                    <Login
+                        step={this.state.step[0]}
+                        explain={this.state.explain[0]}
+                        next={this.state.next[0]}
+                    />
+                </Route>
+                <Route exact path="/getValue">
+                    <GetValue
+                        step={this.state.step[1]}
+                        explain={this.state.explain[1]}
+                        next={this.state.next[1]}
+                    />
+                </Route>
+                <Route path="/enterValue">
+                    <EnterValue
+                        step={this.state.step[2]}
+                        explain={this.state.explain[2]}
+                        inputValue={inputValue}
+                        value={abc}
+                        enterKey={this.enterKey}
+                    />
+                </Route>
+            </Switch>
         );
     }
 }

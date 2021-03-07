@@ -3,7 +3,7 @@ import "./Login.css";
 
 class Login extends Component {
     render() {
-        var { id, explain, next } = this.props;
+        var { id, explain, next, step } = this.props;
         return (
             <div className="whole">
                 <div className="Tracking-Progress">
