@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "../page/Home/Login/Login";
 import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
+import LeftBar from "../component/LeftBar";
 
 class App extends Component {
     state = {
@@ -37,36 +38,37 @@ class App extends Component {
         }
     };
     render() {
-        // console.log("moodle :>> ", moodle);
-        const { inputValue, value, abc } = this;
-        // var { moodle } = this.state;
-        const { step, explain, moodle } = this.state;
+        const { inputValue, value, enterKey } = this;
+        const { step, explain, next } = this.state;
         return (
-            <Switch>
-                <Route path="/">
-                    <Login
-                        step={this.state.step[0]}
-                        explain={this.state.explain[0]}
-                        next={this.state.next[0]}
-                    />
-                </Route>
-                <Route exact path="/getValue">
-                    <GetValue
-                        step={this.state.step[1]}
-                        explain={this.state.explain[1]}
-                        next={this.state.next[1]}
-                    />
-                </Route>
-                <Route path="/enterValue">
-                    <EnterValue
-                        step={this.state.step[2]}
-                        explain={this.state.explain[2]}
-                        inputValue={inputValue}
-                        value={abc}
-                        enterKey={this.enterKey}
-                    />
-                </Route>
-            </Switch>
+            <>
+                {/* <LeftBar /> */}
+                <Switch>
+                    <Route exact path="/">
+                        <Login
+                            step={step[0]}
+                            explain={explain[0]}
+                            next={next[0]}
+                        />
+                    </Route>
+                    <Route path="/getValue">
+                        <GetValue
+                            step={step[1]}
+                            explain={explain[1]}
+                            next={next[1]}
+                        />
+                    </Route>
+                    <Route path="/enterValue">
+                        <EnterValue
+                            step={step[2]}
+                            explain={explain[2]}
+                            inputValue={inputValue}
+                            value={value}
+                            enterKey={enterKey}
+                        />
+                    </Route>
+                </Switch>
+            </>
         );
     }
 }

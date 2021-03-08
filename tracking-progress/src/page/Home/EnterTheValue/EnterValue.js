@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../Login/Login.css";
 import LeftBar from "../../../component/LeftBar";
 
@@ -24,13 +25,21 @@ class EnterValue extends Component {
                                 onKeyPress={enterKey}
                             />
                             <button
+                                className="okKey"
                                 onClick={(e) => {
-                                    // inputValue();
                                     value();
                                 }}
                             >
                                 확인
                             </button>
+                            <div className="location">
+                                <button className="backKey">
+                                    <Link to="/getValue">이전</Link>
+                                </button>
+                                <button className="homeKey">
+                                    <Link to="/">홈으로</Link>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

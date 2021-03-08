@@ -6,7 +6,6 @@ class LeftBar extends PureComponent {
         return (
             <div className="Tracking-Progress">
                 <div className="text">Tracking Progress</div>
-                <div>test</div>
             </div>
         );
     }

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../Login/Login.css";
+import LeftBar from "../../../component/LeftBar";
 
 class GetValue extends Component {
     render() {
-        var { step, explain, next } = this.props;
+        const { step, explain, next } = this.props;
         return (
             <div className="whole">
-                <div className="Tracking-Progress">
-                    <div className="text">Tracking Progress</div>
-                </div>
+                <LeftBar />
                 <div className="Step">
                     <div className="explain">
                         <div>{step}</div>
@@ -33,14 +33,9 @@ class GetValue extends Component {
                             5. MoodleSession 값을 다음 페이지의 input 창에 입력
                         </h2>
                     </div>
-                    {/* <button
-                        onClick={function (e) {
-                            window.open("http://lms.induk.ac.kr");
-                        }}
-                    >
-                        OPEN lms.induk.ac.kr
-                    </button> */}
-                    <button>{next}</button>
+                    <button>
+                        <Link to="/enterValue">{next}</Link>
+                    </button>
                 </div>
             </div>
         );

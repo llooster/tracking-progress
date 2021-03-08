@@ -1,27 +1,30 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
+import LeftBar from "../../../component/LeftBar";
 
 class Login extends Component {
     render() {
-        var { id, explain, next, step } = this.props;
+        const { explain, next, step } = this.props;
         return (
             <div className="whole">
-                <div className="Tracking-Progress">
-                    <div className="text">Tracking Progress</div>
-                </div>
+                <LeftBar />
                 <div className="Step">
                     <div className="explain">
                         <div>{step}</div>
                         <span>{explain}</span>
                     </div>
-                    <button
-                        onClick={function (e) {
-                            window.open("http://lms.induk.ac.kr");
-                        }}
+                    {/* TODO: a 태그로 변경 작업 */}
+                    <a
+                        className="schSite"
+                        href="http://lms.induk.ac.kr"
+                        target="_blank"
                     >
                         OPEN lms.induk.ac.kr
+                    </a>
+                    <button className="button">
+                        <Link to="/getValue">{next}</Link>
                     </button>
-                    <button className="button">{next}</button>
                 </div>
             </div>
         );
