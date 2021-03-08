@@ -18,7 +18,7 @@ class App extends Component {
             "크롤링을 위한 값을 가져옵니다. 아래는 Mac / Chrome 기준입니다.",
             "Step 2. 에서 확인한 값을 입력하세요!",
         ],
-        next: ["로그인 완료 후 클릭하세요!", "위 과정 완료 후 클릭!"],
+        next: ["next", "back"],
         moodle: "",
     };
 
@@ -42,7 +42,7 @@ class App extends Component {
         const { step, explain, next } = this.state;
         return (
             <>
-                {/* <LeftBar /> */}
+                <LeftBar />
                 <Switch>
                     <Route exact path="/">
                         <Login
@@ -55,7 +55,7 @@ class App extends Component {
                         <GetValue
                             step={step[1]}
                             explain={explain[1]}
-                            next={next[1]}
+                            next={next}
                         />
                     </Route>
                     <Route path="/enterValue">
@@ -65,6 +65,7 @@ class App extends Component {
                             inputValue={inputValue}
                             value={value}
                             enterKey={enterKey}
+                            next={next}
                         />
                     </Route>
                 </Switch>

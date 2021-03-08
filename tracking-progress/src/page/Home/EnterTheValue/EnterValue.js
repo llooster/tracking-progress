@@ -5,39 +5,37 @@ import LeftBar from "../../../component/LeftBar";
 
 class EnterValue extends Component {
     render() {
-        const { step, explain, inputValue, value, enterKey } = this.props;
+        const { step, explain, inputValue, value, enterKey, next } = this.props;
         return (
-            <div className="whole">
-                <LeftBar />
-                <div className="Step">
-                    <div className="explain">
-                        <div>{step}</div>
-                        <span>{explain}</span>
+            <div id="whole">
+                {/* <LeftBar /> */}
+                <div>
+                    <div className="section">
+                        <div className="step">{step}</div>
+                        <div className="explain">{explain}</div>
                     </div>
-                    <div className="inputBox">
-                        <div className="moodle">MoodleSesstion</div>
-                        <div className="input">
+                    <div className="contents">
+                        <div className="moodleText">MoodleSesstion</div>
+                        <div>
                             <input
                                 type="text"
-                                id="inputValue"
                                 placeholder="MoodleSession을 입력해주세요"
                                 onChange={inputValue}
                                 onKeyPress={enterKey}
                             />
                             <button
-                                className="okKey"
                                 onClick={(e) => {
                                     value();
                                 }}
                             >
                                 확인
                             </button>
-                            <div className="location">
-                                <button className="backKey">
-                                    <Link to="/getValue">이전</Link>
+                            <div className="shift">
+                                <button>
+                                    <Link to="/getValue">{next[1]}</Link>
                                 </button>
-                                <button className="homeKey">
-                                    <Link to="/">홈으로</Link>
+                                <button>
+                                    <Link to="/">{next[0]}</Link>
                                 </button>
                             </div>
                         </div>
