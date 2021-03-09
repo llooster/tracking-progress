@@ -1,25 +1,23 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../Login/Login.css";
-import LeftBar from "../../../component/LeftBar";
 
 class GetValue extends Component {
     render() {
         const { step, explain, next } = this.props;
         return (
             <div id="whole">
-                {/* <LeftBar /> */}
-                <div>
+                <div className="stance">
                     <div className="section">
                         <div className="step">{step}</div>
                         <div className="explain">{explain}</div>
                     </div>
-                    <div className="contents">
-                        <div className="system">
+                    <div className="value">
+                        <div className="getValue">
                             <h2>
                                 1.
                                 <a
-                                    href="http://lms.induk.ac.kr"
+                                    href="https://lms.induk.ac.kr"
                                     target="_blank"
                                 >
                                     lms.induk.ac.kr

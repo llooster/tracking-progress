@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
-import LeftBar from "../../../component/LeftBar";
 
 class Login extends Component {
     render() {
         const { explain, next, step } = this.props;
         return (
             <div id="whole">
-                {/* <LeftBar /> */}
-                <div>
+                <div className="stance">
                     <div className="section">
                         <div className="step">{step}</div>
                         <div className="explain">{explain}</div>

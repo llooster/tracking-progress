@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+#whole {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+.getValue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}

@@ -4,19 +4,22 @@ import Login from "../page/Home/Login/Login";
 import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
+import SelectScreen from "../page/Attendance";
 
 class App extends Component {
     state = {
-        // id: 1,
+        id: 1,
         step: [
             "Step 1. Login",
             "Step 2. Get the Value",
             "Step 3. Enter the Value",
+            "Attendace rate",
         ],
         explain: [
             "induk 사이트에 로그인 합니다",
             "크롤링을 위한 값을 가져옵니다. 아래는 Mac / Chrome 기준입니다.",
             "Step 2. 에서 확인한 값을 입력하세요!",
+            "각 수업 출석표",
         ],
         next: ["next", "back"],
         moodle: "",
@@ -39,7 +42,7 @@ class App extends Component {
     };
     render() {
         const { inputValue, value, enterKey } = this;
-        const { step, explain, next } = this.state;
+        const { id, step, explain, next } = this.state;
         return (
             <>
                 <LeftBar />
@@ -67,6 +70,9 @@ class App extends Component {
                             enterKey={enterKey}
                             next={next}
                         />
+                    </Route>
+                    <Route path="/select">
+                        <SelectScreen step={step[3]} explain={explain[3]} />
                     </Route>
                 </Switch>
             </>
