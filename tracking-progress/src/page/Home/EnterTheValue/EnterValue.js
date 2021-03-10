@@ -34,12 +34,13 @@ class EnterValue extends Component {
                         </div>
                     </div>
                     <div className="shift">
-                        <button>
-                            <Link to="/getValue">{next[1]}</Link>
-                        </button>
-                        <button>
-                            <Link to="/select">{next[0]}</Link>
-                        </button>
+                        <Link to="/getValue">
+                            <button>{next[1]}</button>
+                        </Link>
+
+                        <Link to="/select">
+                            <button>{next[0]}</button>
+                        </Link>
                     </div>
                 </div>
             </div>

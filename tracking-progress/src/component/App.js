@@ -4,7 +4,7 @@ import Login from "../page/Home/Login/Login";
 import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
-import SelectScreen from "../page/Attendance";
+import Attendance from "../page/Attendance";
 
 class App extends Component {
     state = {
@@ -42,12 +42,12 @@ class App extends Component {
     };
     render() {
         const { inputValue, value, enterKey } = this;
-        const { id, step, explain, next } = this.state;
+        const { id, step, explain, next, moodle } = this.state;
         return (
             <>
                 <LeftBar />
                 <Switch>
-                    <Route exact path="/">
+                    {/* <Route exact path="/">
                         <Login
                             step={step[0]}
                             explain={explain[0]}
@@ -71,8 +71,14 @@ class App extends Component {
                             next={next}
                         />
                     </Route>
+                        */}
                     <Route path="/select">
-                        <SelectScreen step={step[3]} explain={explain[3]} />
+                        <Route path="/select/:name" />
+                        <Attendance
+                            step={step[3]}
+                            explain={explain[3]}
+                            moodle={moodle}
+                        />
                     </Route>
                 </Switch>
             </>

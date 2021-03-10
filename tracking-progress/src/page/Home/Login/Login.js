@@ -18,9 +18,11 @@ class Login extends Component {
                         </a>
                     </div>
                     <div className="shift">
-                        <button>
-                            <Link to="/getValue">{next}</Link>
-                        </button>
+                        {/* <button> */}
+                        <Link to="/getValue">
+                            <button>{next}</button>
+                        </Link>
+                        {/* </button> */}
                     </div>
                 </div>
             </div>
