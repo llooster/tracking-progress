@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 #whole {
-    margin-right: 10%;
+    margin-right: 0;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -10,10 +10,11 @@
     position: relative;
 }
 .leftBar {
+    /* position */
     float: left;
-    margin-left: 10%;
+    margin-left: 100px;
     width: 300px;
-    height: 100vh;
+    height: 100vmax;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,7 +61,7 @@
 
 .contents,
 .value {
-    width: 100%;
+    width: 600px;
     min-width: 550px;
     height: 500px;
     display: flex;
@@ -101,7 +102,7 @@ a {
 }
 
 .shift {
-    width: 100%;
+    width: 500px;
     min-width: 300px;
     margin-top: 20px;
     display: flex;
@@ -112,6 +113,10 @@ a {
     width: 80px;
     margin-left: 10px;
 }
+/* .shift a:hover {
+    user-select: none;
+    /* cursor: pointer; 
+} */
 button {
     border: solid gray 0.5px;
     border-radius: 10px;
@@ -127,7 +132,8 @@ button {
 }
 .shift button:hover {
     box-shadow: 0 0 3px 0 rgb(121, 121, 121);
-    user-select: inherit;
+    user-select: none;
+    cursor: pointer;
 }
 h2 {
     font-size: 22px;
@@ -167,4 +173,9 @@ h2 {
     height: 45px;
     font-size: 17px;
     font-weight: 500;
+}
+.inputValue > button:hover {
+    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+    user-select: none;
+    cursor: pointer;
 }

@@ -20,7 +20,7 @@ class App extends Component {
             "induk 사이트에 로그인 합니다",
             "크롤링을 위한 값을 가져옵니다. 아래는 Mac / Chrome 기준입니다.",
             "Step 2. 에서 확인한 값을 입력하세요!",
-            "각 수업 출석표",
+            "수업 출석표",
         ],
         next: ["next", "back"],
         moodle: "",
@@ -48,7 +48,7 @@ class App extends Component {
             <>
                 <LeftBar />
                 <Switch>
-                    {/* <Route exact path="/">
+                    <Route exact path="/">
                         <Login
                             step={step[0]}
                             explain={explain[0]}
@@ -72,7 +72,6 @@ class App extends Component {
                             next={next}
                         />
                     </Route>
-                        */}
                     <Route path="/select">
                         <Route path="/select/:name" />
                         <Attendance
@@ -80,6 +79,7 @@ class App extends Component {
                             explain={explain[3]}
                             moodle={moodle}
                         />
+                        {/* <Gragh /> */}
                     </Route>
                 </Switch>
             </>
