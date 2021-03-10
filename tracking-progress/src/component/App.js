@@ -5,6 +5,7 @@ import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
+import Gragh from "../page/Gragh/Gragh";
 
 class App extends Component {
     state = {

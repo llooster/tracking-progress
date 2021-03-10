@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
 import "./Attendance.css";
-import Table from "../../component/table/table.json";
-import { Route } from "react-router-dom";
-import { matchPath } from "react-router";
+// import Table from "../../component/table/table.json";
+// import { Route } from "react-router-dom";
+// import { matchPath } from "react-router";
 import { Gragh } from "../Gragh";
 
 class Attendance extends PureComponent {
