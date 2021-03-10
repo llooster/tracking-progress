@@ -26,7 +26,9 @@ class Attendance extends PureComponent {
                     {/* <div className="getValue"></div> */}
                     <div className="graghPart">
                         <div className="graghSet">
-                            <span>{<Gragh />}</span>
+                            <span>
+                                <Gragh />
+                            </span>
                             <span>2</span>
                         </div>
                         <div className="graghSet">
