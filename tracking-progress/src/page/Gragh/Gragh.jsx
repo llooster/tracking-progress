@@ -4,12 +4,27 @@ import "./Gragh.css";
 // import { Route } from "react-router-dom";
 // import { matchPath } from "react-router";
 import Table from "../../component/table/Table.json";
+import dummy2 from "../../component/table/dummy2.json";
 
 class Gragh extends PureComponent {
     state = {
         name: Object.keys(Table),
         // level: Object.values(Table),
-        value: Object.values(Table).map((each, index) => {
+        value: [],
+        graphCount: [0, 1, 2, 3, 4, 5, 6],
+        status: [1, 2, 3, 4, 5, 6, 16],
+        class1: dummy2[0].course.name,
+        attend: dummy2[0].progress.attendanceWeek,
+        // newValue: [],
+    };
+
+    componentDidMount() {
+        const { reValue } = this;
+        reValue();
+    }
+
+    reValue = () => {
+        const newValue = Object.values(Table).map((each, index) => {
             if (each === "1") {
                 return "absence";
             } else if (each === "2") {
@@ -17,31 +32,29 @@ class Gragh extends PureComponent {
             } else {
                 return "attendance";
             }
-        }),
+        });
+
+        this.setState({
+            value: newValue,
+        });
     };
+
     render() {
-        let { name, level, value } = this.state;
-        console.log("name :>> ", name);
+        const { name, level, value, graphCount, class1 } = this.state;
+        console.log("class1 :>> ", class1);
+
         // console.log("level :>> ", level);
         return (
             <div className="graghWhole">
                 <div className="gragh">
-                    <div id={value[0]}>1</div>
-                    <div id={value[1]}>2</div>
-                    <div id={value[2]}>3</div>
-                    <div id={value[3]}>4</div>
-                    <div id={value[4]}>5</div>
-                    <div id={value[5]}>6</div>
-                    <div id={value[6]}>7</div>
+                    {graphCount.map((item) => (
+                        <div id={value[item]}></div>
+                    ))}
                 </div>
                 <div className="color">
-                    <span>{name[0]}</span>
-                    <span>{name[1]}</span>
-                    <span>{name[2]}</span>
-                    <span>{name[3]}</span>
-                    <span>{name[4]}</span>
-                    <span>{name[5]}</span>
-                    <span>{name[6]}</span>
+                    {graphCount.map((item) => (
+                        <span>{name[item]}</span>
+                    ))}
                 </div>
             </div>
         );

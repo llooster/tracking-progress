@@ -21,18 +21,18 @@
 }
 .gragh #absence {
     /* position: absolute; */
-    background-color: rgb(164, 164, 164);
-    width: auto;
+    background-color: rgb(203, 203, 203);
+    width: 12px;
     height: 100px;
 }
 .gragh #late {
-    background-color: rgb(251, 255, 206);
-    width: auto;
-    height: 100px;
+    background-color: rgb(241, 254, 105);
+    width: 12px;
+    height: 150px;
 }
 .gragh #attendance {
     background-color: rgb(171, 255, 122);
-    width: auto;
+    width: 12px;
     height: 200px;
 }
 .color {

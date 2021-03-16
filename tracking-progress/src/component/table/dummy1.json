@@ -1,0 +1,32 @@
+[
+    {
+        "course": {
+            "name": "긍정마인드와인맥만들기",
+            "professional": "김석곤"
+        },
+        "progress": [
+            {
+                "week": "1",
+                "name": "1-1",
+                "attendance": "O",
+                "attendanceWeek": "O"
+            },
+            {
+                "week": "1",
+                "name": "1-2",
+                "attendance": "▲"
+            },
+            {
+                "week": "1",
+                "name": "1-2",
+                "attendance": "▲"
+            },
+            {
+                "week": "2",
+                "name": "2-1",
+                "attendance": "O",
+                "attendanceWeek": "X"
+            }
+        ]
+    }
+]

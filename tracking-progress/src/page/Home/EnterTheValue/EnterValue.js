@@ -4,7 +4,15 @@ import "../Login/Login.css";
 
 class EnterValue extends Component {
     render() {
-        const { step, explain, inputValue, value, enterKey, next } = this.props;
+        const {
+            step,
+            explain,
+            inputValue,
+            value,
+            enterKey,
+            next,
+            moodle,
+        } = this.props;
         return (
             <div id="whole">
                 <div className="stance">
@@ -38,7 +46,7 @@ class EnterValue extends Component {
                             <button>{next[1]}</button>
                         </Link>
 
-                        <Link to="/select">
+                        <Link to={`/select/${moodle}`}>
                             <button>{next[0]}</button>
                         </Link>
                     </div>

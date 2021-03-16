@@ -5,6 +5,9 @@ import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
+
+import classTest from "../page/classTest/index";
+
 // import Gragh from "../page/Gragh/Gragh";
 
 class App extends Component {
@@ -27,8 +30,12 @@ class App extends Component {
     };
 
     inputValue = (e) => {
+        // const {
+        //     taget: { value },
+        // } = e;
+        const { value } = e.target;
         this.setState({
-            moodle: e.target.value,
+            moodle: value,
         });
     };
     value = () => {
@@ -63,7 +70,7 @@ class App extends Component {
                             next={next}
                         />
                     </Route>
-                    <Route path="/enterValue">
+                    <Route exact path="/enterValue">
                         <EnterValue
                             step={step[2]}
                             explain={explain[2]}
@@ -71,17 +78,22 @@ class App extends Component {
                             value={value}
                             enterKey={enterKey}
                             next={next}
-                        />
-                    </Route>
-                    <Route path="/select">
-                        <Route path="/select/:name" />
-                        <Attendance
-                            step={step[3]}
-                            explain={explain[3]}
                             moodle={moodle}
                         />
-                        {/* <Gragh /> */}
                     </Route>
+
+                    <Route
+                        path="/select/:trackerId"
+                        render={(props) => (
+                            <Attendance
+                                step={step[3]}
+                                explain={explain[3]}
+                                moodle={moodle}
+                                {...props}
+                            />
+                        )}
+                    />
+                    {/* <classTest /> */}
                 </Switch>
             </>
         );
