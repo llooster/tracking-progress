@@ -3,7 +3,7 @@ import "./Attendance.css";
 // import Table from "../../component/table/table.json";
 // import { Route } from "react-router-dom";
 // import { matchPath } from "react-router";
-import Gragh from "../Gragh";
+import Graph from "../Graph";
 
 class Attendance extends PureComponent {
     constructor(props) {
@@ -14,7 +14,7 @@ class Attendance extends PureComponent {
         };
     }
     render() {
-        console.log("Attendance :>> ", this.props.match.params.trackerId);
+        // console.log("Attendance :>> ", this.props.match.params.trackerId);
         const { step } = this.props;
         const { attendanceCount, week } = this.state;
         return (
@@ -50,8 +50,8 @@ class Attendance extends PureComponent {
                         {attendanceCount.map((item) => {
                             return (
                                 <div className="graghSet">
-                                    <Gragh />
-                                    <Gragh />
+                                    <Graph />
+                                    <Graph />
                                 </div>
                             );
                         })}

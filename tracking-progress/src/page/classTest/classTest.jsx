@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import dummy2 from "../../component/table/dummy2.json";
 
-class classTest extends PureComponent {
+class ClassTest extends PureComponent {
     state = {
         class: dummy2[0].course.name,
         week: [],
@@ -19,10 +19,9 @@ class classTest extends PureComponent {
         // console.log("class :>> ", class);
         return (
             <div>
-                {/* <div>{class}</div> */}
-                <div>123</div>
+                <div>12sadfds3</div>
             </div>
         );
     }
 }
-export default classTest;
+export default ClassTest;

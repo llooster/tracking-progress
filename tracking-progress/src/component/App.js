@@ -5,8 +5,7 @@ import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
-
-import classTest from "../page/classTest/index";
+import ClassTest from "../page/ClassTest";
 
 // import Gragh from "../page/Gragh/Gragh";
 
@@ -30,9 +29,6 @@ class App extends Component {
     };
 
     inputValue = (e) => {
-        // const {
-        //     taget: { value },
-        // } = e;
         const { value } = e.target;
         this.setState({
             moodle: value,
@@ -81,7 +77,6 @@ class App extends Component {
                             moodle={moodle}
                         />
                     </Route>
-
                     <Route
                         path="/select/:trackerId"
                         render={(props) => (
@@ -93,8 +88,8 @@ class App extends Component {
                             />
                         )}
                     />
-                    {/* <classTest /> */}
                 </Switch>
+                {/* <ClassTest></ClassTest> */}
             </>
         );
     }
