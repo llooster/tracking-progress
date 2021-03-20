@@ -1,27 +1,29 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 class Login extends Component {
     render() {
-        var { id, explain, next, step } = this.props;
+        const { explain, next, step } = this.props;
         return (
-            <div className="whole">
-                <div className="Tracking-Progress">
-                    <div className="text">Tracking Progress</div>
-                </div>
-                <div className="Step">
-                    <div className="explain">
-                        <div>{step}</div>
-                        <span>{explain}</span>
+            <div id="whole">
+                <div className="stance">
+                    <div className="section">
+                        <div className="step">{step}</div>
+                        <div className="explain">{explain}</div>
                     </div>
-                    <button
-                        onClick={function (e) {
-                            window.open("http://lms.induk.ac.kr");
-                        }}
-                    >
-                        OPEN lms.induk.ac.kr
-                    </button>
-                    <button className="button">{next}</button>
+                    <div className="contents">
+                        <a href="http://lms.induk.ac.kr" target="_blank">
+                            OPEN lms.induk.ac.kr
+                        </a>
+                    </div>
+                    <div className="shift">
+                        {/* <button> */}
+                        <Link to="/getValue">
+                            <button>{next}</button>
+                        </Link>
+                        {/* </button> */}
+                    </div>
                 </div>
             </div>
         );

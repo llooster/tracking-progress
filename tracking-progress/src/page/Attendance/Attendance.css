@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+#whole {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+.getValue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+.graghPart {
+    /* position: a; */
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.graghSet {
+    /* position: relative; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
