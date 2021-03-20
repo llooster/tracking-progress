@@ -9,11 +9,13 @@ import dummy3 from "../../component/table/dummyTestData.json";
 
 class Graph extends PureComponent {
     state = {
-        // 1.수업이름name 2.수업이름앞글자firstName  3.몇주차인지weekNumber
+        // 수업이름, 주차별 수업,
+        //  3.몇주차인지weekNumber
         // 4.주출석attendanceWeek  5.강의출석attendance
-        name: [],
-        firstName: [],
-        weekNumber: [],
+        name: [], //수업이름
+        firstName: [], //수업이름앞글자
+        weekNumber: [], //몇주차인가
+        // name이 1로시작하는것들
         graphCount: [0, 1, 2, 3, 4, 5, 6], //과목수 7
         status: [1, 2, 3, 4, 5, 6, 16], //16주차를 해야됨
         class1: dummy2[0].course.name,
@@ -41,6 +43,13 @@ class Graph extends PureComponent {
             name: getName,
         });
         this.getFirstName(dummy2[0].course.name);
+    };
+
+    getWeekNum = () => {
+        const { weekNumber } = this.state;
+        const newWeekNum = Array.from(dummy2[0].progress);
+
+        // newWeekNum =
     };
 
     getFirstName = (each) => {

@@ -1,31 +1,161 @@
 [
     {
         "course": {
-            "name": "긍정마인드와인맥만들기",
+            "name": "긍정마인드와인맥만들기 (00B00169_A1)",
             "professional": "김석곤"
         },
         "progress": [
             {
                 "week": "1",
-                "name": "1-1",
+                "name": "1-1(인간관계론의 형성과정)",
+                "neededTime": "22:00",
+                "lectureTime": "25:12 2회 열람",
                 "attendance": "O",
                 "attendanceWeek": "O"
             },
             {
-                "week": "1",
-                "name": "1-2",
-                "attendance": "▲"
-            },
-            {
-                "week": "1",
-                "name": "1-2",
-                "attendance": "▲"
+                "name": "1-2(인간관계의 어려움)",
+                "neededTime": "22:00",
+                "lectureTime": "25:09 1회 열람",
+                "attendance": "O"
             },
             {
                 "week": "2",
-                "name": "2-1",
+                "name": "2-1(자아 개념의 이해)",
+                "neededTime": "22:00",
+                "lectureTime": "25:11 1회 열람",
                 "attendance": "O",
-                "attendanceWeek": "X"
+                "attendanceWeek": "O"
+            },
+            {
+                "name": "2-2(자아 정체감의 발달과정)",
+                "neededTime": "22:00",
+                "lectureTime": "25:16 1회 열람",
+                "attendance": "O"
+            },
+            {
+                "week": "3",
+                "name": "3-1(자아분석)",
+                "neededTime": "22:00",
+                "lectureTime": "-",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "name": "3-2(성격검사-에고그램",
+                "neededTime": "22:00",
+                "lectureTime": "-",
+                "attendance": ""
+            },
+            {
+                "week": "4",
+                "name": "4-1(대인지각)",
+                "neededTime": "23:00",
+                "lectureTime": "-",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "name": "4-2(호감형성과정)",
+                "neededTime": "22:00",
+                "lectureTime": "-",
+                "attendance": ""
+            },
+            {
+                "week": "5",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "6",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "7",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "8",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "9",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "10",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "11",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "12",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "13",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "14",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "15",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
+            },
+            {
+                "week": "16",
+                "name": "",
+                "neededTime": "",
+                "lectureTime": "",
+                "attendance": "",
+                "attendanceWeek": ""
             }
         ]
     }
