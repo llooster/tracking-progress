@@ -1,22 +1,21 @@
 [
     {
         "course": {
-            "name": "긍정마인드와인맥만들기",
-            "professional": "김석곤"
+            "name": "긍정마인드와인맥만들기"
         },
         "progress": [
             [
                 {
-                    "name": "1-1(인간관계론의 형성과정)",
+                    "name": "1교시",
                     "attendance": "O",
                     "attendanceWeek": "X"
                 },
                 {
-                    "name": "1-2(인간관계의 어려움)",
+                    "name": "2교시",
                     "attendance": "▲"
                 },
                 {
-                    "name": "1-3(과제가 너무 많아)",
+                    "name": "3교시",
                     "attendance": "X"
                 }
             ],
@@ -28,10 +27,6 @@
                 },
                 {
                     "name": "2교시",
-                    "attendance": "O"
-                },
-                {
-                    "name": "3교시",
                     "attendance": "O"
                 }
             ]
