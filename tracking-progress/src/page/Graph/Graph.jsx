@@ -70,13 +70,13 @@ class Graph extends PureComponent {
         this.setState({
             attendanceWeek: _attendanceWeek,
         });
-        this.judgeAttendance();
+        this.judgeAttendance(_attendanceWeek);
     };
 
-    judgeAttendance = () => {
+    judgeAttendance = (_attendanceWeek) => {
         //출석 판별 후 id값 대입
         const { attendanceWeek } = this.state;
-        const _lastAttendance = attendanceWeek.map((each, index) => {
+        const _lastAttendance = _attendanceWeek.map((each, index) => {
             if (each === "O") {
                 return "attendance";
             } else if (each === "▲") {
