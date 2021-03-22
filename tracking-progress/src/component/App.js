@@ -5,9 +5,8 @@ import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
-import ClassTest from "../page/ClassTest";
-
 // import Gragh from "../page/Gragh/Gragh";
+import Main from "../page/Home/Main";
 
 class App extends Component {
     state = {
@@ -29,9 +28,8 @@ class App extends Component {
     };
 
     inputValue = (e) => {
-        const { value } = e.target;
         this.setState({
-            moodle: value,
+            moodle: e.target.value,
         });
     };
     value = () => {
@@ -66,7 +64,7 @@ class App extends Component {
                             next={next}
                         />
                     </Route>
-                    <Route exact path="/enterValue">
+                    <Route path="/enterValue">
                         <EnterValue
                             step={step[2]}
                             explain={explain[2]}
@@ -74,22 +72,19 @@ class App extends Component {
                             value={value}
                             enterKey={enterKey}
                             next={next}
-                            moodle={moodle}
                         />
                     </Route>
-                    <Route
-                        path="/select/:trackerId"
-                        render={(props) => (
-                            <Attendance
-                                step={step[3]}
-                                explain={explain[3]}
-                                moodle={moodle}
-                                {...props}
-                            />
-                        )}
-                    />
+                    <Route path="/select">
+                        <Route path="/select/:name" />
+                        <Attendance
+                            step={step[3]}
+                            explain={explain[3]}
+                            moodle={moodle}
+                        />
+                        {/* <Gragh /> */}
+                    </Route>
+                    <Route path="/main" component={Main} />
                 </Switch>
-                {/* <ClassTest></ClassTest> */}
             </>
         );
     }
