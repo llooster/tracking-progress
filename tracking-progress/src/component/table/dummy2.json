@@ -5,26 +5,36 @@
             "professional": "김석곤"
         },
         "progress": [
-            {
-                "week": "1",
-                "name": "1-1(인간관계론의 형성과정)",
-                "attendance": "O",
-                "attendanceWeek": "X"
-            },
-            {
-                "name": "1-2(인간관계의 어려움)",
-                "attendance": "▲"
-            },
-            {
-                "name": "1-3(과제가 너무 많아)",
-                "attendance": "X"
-            },
-            {
-                "week": "2",
-                "name": "2-1(자아 개념의 이해)",
-                "attendance": "O",
-                "attendanceWeek": "O"
-            }
+            [
+                {
+                    "name": "1-1(인간관계론의 형성과정)",
+                    "attendance": "O",
+                    "attendanceWeek": "X"
+                },
+                {
+                    "name": "1-2(인간관계의 어려움)",
+                    "attendance": "▲"
+                },
+                {
+                    "name": "1-3(과제가 너무 많아)",
+                    "attendance": "X"
+                }
+            ],
+            [
+                {
+                    "name": "1교시",
+                    "attendance": "O",
+                    "attendanceWeek": "O"
+                },
+                {
+                    "name": "2교시",
+                    "attendance": "O"
+                },
+                {
+                    "name": "3교시",
+                    "attendance": "O"
+                }
+            ]
         ]
     }
 ]

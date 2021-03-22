@@ -15,9 +15,11 @@ class Graph extends PureComponent {
         name: [], //수업이름
         firstName: [], //수업이름앞글자
         weekNumber: [], //몇주차인가
+        attendanceWeek: [],
+        attendance: [],
         // name이 1로시작하는것들
         graphCount: [0, 1, 2, 3, 4, 5, 6], //과목수 7
-        status: [1, 2, 3, 4, 5, 6, 16], //16주차를 해야됨
+        status: [1, 2], //16주차를 해야됨
         class1: dummy2[0].course.name,
         attendWeek: dummy2[0].progress.attendanceWeek,
         attend: dummy2[0].progress.attendance,
@@ -28,6 +30,7 @@ class Graph extends PureComponent {
         const { getName, getFirstName, reValue } = this;
         reValue();
         getName();
+        this.getWeekNum();
         // getFirstName();
     }
 
@@ -46,10 +49,14 @@ class Graph extends PureComponent {
     };
 
     getWeekNum = () => {
-        const { weekNumber } = this.state;
-        const newWeekNum = Array.from(dummy2[0].progress);
-
-        // newWeekNum =
+        const { weekNumber, attendance, status } = this.state;
+        const newWeekNum = status.map((item, index) => {
+            return [dummy2[0].progress[index].map((item) => item.attendance)];
+        });
+        // Array.from(newWeekNum);
+        this.setState({
+            attendance: newWeekNum,
+        });
     };
 
     getFirstName = (each) => {
@@ -97,7 +104,13 @@ class Graph extends PureComponent {
             lastAttendance,
             graphCount,
             class1,
+            attendance,
         } = this.state;
+        console.log(
+            "each ",
+            attendance[0]?.every((item) => item.find((each) => each === "O"))
+        ); // false ->> 완강, true ->> "X"가 몇개있는지 체크
+
         // console.log("name :>> ", typeof name[0]);
         // console.log("firstName :>> ", firstName);
         return (
