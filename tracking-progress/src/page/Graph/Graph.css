@@ -40,3 +40,43 @@
     flex-direction: row;
     justify-content: space-between;
 }
+#classColor {
+    margin-top: 5px;
+    width: 12px;
+    height: 5px;
+}
+.one {
+    border: solid rgb(255, 38, 0) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(255, 38, 0);
+}
+.two {
+    border: solid rgb(255, 153, 0) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(255, 153, 0);
+}
+.three {
+    border: solid rgb(198, 206, 106) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(198, 206, 106);
+}
+.four {
+    border: solid rgb(56, 176, 0) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(56, 176, 0);
+}
+.five {
+    border: solid rgb(37, 77, 255) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(37, 77, 255);
+}
+.six {
+    border: solid rgb(98, 0, 255) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(98, 0, 255);
+}
+.seven {
+    border: solid rgb(104, 212, 255) 0.5px;
+    border-radius: 10px;
+    background-color: rgb(104, 212, 255);
+}

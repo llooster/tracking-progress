@@ -10,17 +10,25 @@ import dummy3 from "../../component/table/dummyTestData.json";
 
 class Graph extends PureComponent {
     state = {
-        count: [], //수업 수
+        count: ["one", "two", "three", "four", "five", "six", "seven"], //수업 수
         name: [], //수업이름
         firstName: [], //수업이름앞글자
+        // attendanceWeek: {
         attendanceWeek1: [], //총 16개 (주차 출석)
         attendanceWeek2: [],
+        // },
+        // attendance: {
         attendance1: [], //수업1의 출석 전체[["O", "X", "X"],["X", "X", "X"],["", "", ""], ...]
         attendance2: [], //수업2의 출석 전체
+        // },
+        // lastAttendance: {
         lastAttendance1: [], //출석에 맞는 id값
         lastAttendance2: [],
+        // },
+        // class: {
         class1: [], //들어야하는 주차 목록
         class2: [],
+        // },
         graphCount: [0, 1, 2, 3, 4, 5, 6], //과목수 7
         status: [], //16주차를 해야됨
 
@@ -38,49 +46,48 @@ class Graph extends PureComponent {
         // 수업명 가져오기
         const { name } = this.state;
         const _name = Array.from(name);
-        for (var i = 0; i < 2; i++) {
-            _name.push(dummy1[i].course.name);
-        }
+        dummy1.map((item, index) => {
+            _name.push(dummy1[index].course.name);
+        });
         this.setState({
             name: _name,
         });
-        // this.getFirstName(_name);
+        this.getFirstName(_name);
     };
 
-    // getFirstName = (_name) => {
-    //     let _firstName = _name.map();
-    //     console.log("_name :>> ", _firstName);
-    //     this.setState({
-    //         firstName: _firstName,
-    //     });
-    // };
+    getFirstName = (_name) => {
+        let _firstName = _name.map((item) => {
+            return item.split("")[0];
+        });
+        this.setState({
+            firstName: _firstName,
+        });
+    };
 
     getAttendance = () => {
         //수업 2개가 각각 몇주차까지 있나
         const { status } = this.state;
-        const _status1 = dummy1[0].progress.map((item, index) => {
+        const _status = dummy1[0].progress.map((item, index) => {
             return index;
         });
-        const _status2 = dummy1[1].progress.map((item, index) => {
-            return index;
-        });
-        const _attendance1 = _status1.map((each, index) => {
+        //몇주차까지있나 ->> status (모든 수업이 16주)
+        const _attendance1 = _status.map((each, index) => {
             return dummy1[0].progress[index].map((item) => item.attendance);
         });
-        const _attendance2 = _status2.map((each, index) => {
+        const _attendance2 = _status.map((each, index) => {
             return dummy1[1].progress[index].map((item) => item.attendance);
         });
         //수업1,수업2의 각각의 출석 전체 현황 attendance
         this.setState({
-            status1: _status1,
+            status: _status,
             attendance1: _attendance1,
             attendance2: _attendance2,
         });
 
-        const _attendanceWeek1 = _status1.map((each, index) => {
+        const _attendanceWeek1 = _status.map((each, index) => {
             return dummy1[0].progress[index][0].attendanceWeek;
         });
-        const _attendanceWeek2 = _status2.map((each, index) => {
+        const _attendanceWeek2 = _status.map((each, index) => {
             return dummy1[1].progress[index][0].attendanceWeek;
         });
         //수업1,수업2의 각각의 주차별 출석현황
@@ -109,7 +116,6 @@ class Graph extends PureComponent {
                 return "absence";
             }
         });
-        console.log("_lastAttendance1 :>> ", _lastAttendance2);
 
         this.setState({
             lastAttendance1: _lastAttendance1,
@@ -145,6 +151,7 @@ class Graph extends PureComponent {
 
     render() {
         const {
+            count,
             name,
             firstName,
             class1,
@@ -168,6 +175,8 @@ class Graph extends PureComponent {
         // );
         // console.log("몇교시부터 들어야되냐? :>> ", class1);
         // console.log("dummy1[0].progress :>> ", dummy1[0].progress);
+        // console.log("status :>> ", status);
+        console.log("각 주차 나누는거부터");
         return (
             <div className="graghWhole">
                 <div className="gragh">
@@ -178,9 +187,9 @@ class Graph extends PureComponent {
                     <div id={lastAttendance2[0]}></div>
                 </div>
                 <div className="color">
-                    {/* {graphCount.map((item) => ( */}
-                    <span>{firstName[0]}</span>
-                    {/* ))} */}
+                    {count.map((item, index) => (
+                        <div id="classColor" className={item}></div>
+                    ))}
                 </div>
             </div>
         );

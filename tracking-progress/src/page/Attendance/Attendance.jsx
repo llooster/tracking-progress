@@ -28,7 +28,7 @@ class Attendance extends PureComponent {
                         {/* return ( */}
                         <div className="graghSet">
                             <Graph />
-                            {/* <Graph /> */}
+                            <Graph />
                         </div>
                         {/* ); */}
                         {/* })} */}
