@@ -24,37 +24,14 @@ class Attendance extends PureComponent {
                         <div className="step">{step}</div>
                     </div>
                     <div className="graghPart">
-                        {/* {week.map((each) => {
-                            <div>
-                                <span>{each}</span>
-                            </div>;
-                        })} */}
-                        {/* <div className="week">
-                            <div className="week12">
-                                <span>1</span>
-                                <span>2</span>
-                            </div>
-                            <div className="week34">
-                                <span>3</span>
-                                <span>4</span>
-                            </div>
-                            <div className="week56">
-                                <span>5</span>
-                                <span>6</span>
-                            </div>
-                            <div className="week78">
-                                <span>7</span>
-                                <span>8</span>
-                            </div>
-                        </div> */}
-                        {attendanceCount.map((item) => {
-                            return (
-                                <div className="graghSet">
-                                    <Graph />
-                                    <Graph />
-                                </div>
-                            );
-                        })}
+                        {/* {attendanceCount.map((item) => { */}
+                        {/* return ( */}
+                        <div className="graghSet">
+                            <Graph />
+                            {/* <Graph /> */}
+                        </div>
+                        {/* ); */}
+                        {/* })} */}
                     </div>
                 </div>
             </div>
