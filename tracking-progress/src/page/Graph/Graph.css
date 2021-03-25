@@ -21,19 +21,44 @@
 }
 .gragh #absence {
     /* position: absolute; */
+    border-radius: 8px;
     background-color: rgb(203, 203, 203);
     width: 12px;
-    height: 100px;
+    height: 80px;
+
+    animation-name: gauge-bar;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+/* @keyframes gauge-bar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
 .gragh #late {
+    border-radius: 8px;
     background-color: rgb(241, 254, 105);
     width: 12px;
-    height: 150px;
+    height: 140px;
 }
 .gragh #attendance {
+    border-radius: 8px;
     background-color: rgb(171, 255, 122);
     width: 12px;
     height: 200px;
+}
+.gragh #early {
+    border-radius: 8px;
+    background-color: rgb(206, 206, 206);
+    width: 12px;
+    height: 10px;
 }
 .color {
     display: flex;

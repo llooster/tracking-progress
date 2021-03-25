@@ -5,33 +5,26 @@ import "./Graph.css";
 // import { matchPath } from "react-router";
 import Table from "../../component/table/Table.json";
 import dummy1 from "../../component/table/dummy1.json";
-import dummy2 from "../../component/table/dummy2.json";
-import dummy3 from "../../component/table/dummyTestData.json";
 
 class Graph extends PureComponent {
     state = {
         count: ["one", "two", "three", "four", "five", "six", "seven"], //수업 수
         name: [], //수업이름
         firstName: [], //수업이름앞글자
-        attendanceWeek1: [],
-        attedanceWeek2: [],
+        attendanceWeek: [],
         // attendance: {
-        attendance1: [], //수업1의 출석 전체[["O", "X", "X"],["X", "X", "X"],["", "", ""], ...]
-        attendance2: [], //수업2의 출석 전체
-        // },
+        attendance: [], //[[수업1의 전체출석], [수업2의 전체출석], ...]
         // lastAttendance: {
-        lastAttendance1: [], //출석에 맞는 id값
-        lastAttendance2: [],
-        // },
+        lastAttendance: [], //출석에 맞는 id값
         // class: {
         class1: [], //들어야하는 주차 목록
         class2: [],
         // },
         graphCount: [0, 1, 2, 3, 4, 5, 6], //과목수 7
         status: [], //16주차를 해야됨
-
         //
         // 한 수업당: 주차별출석현황O, 수업별X, 교시별출석(progress[주차][attendance1]),
+        week: this.props,
     };
 
     componentDidMount() {
@@ -69,82 +62,86 @@ class Graph extends PureComponent {
             return index;
         });
         //몇주차까지있나 ->> status (모든 수업이 16주)
-        const _attendance1 = _status.map((each, index) => {
-            return dummy1[0].progress[index].map((item) => item.attendance);
-        });
-        const _attendance2 = _status.map((each, index) => {
-            return dummy1[1].progress[index].map((item) => item.attendance);
-        });
-        //수업1,수업2의 각각의 출석 전체 현황 attendance
-        this.setState({
-            status: _status,
-            attendance1: _attendance1,
-            attendance2: _attendance2,
-        });
-
-        const _attendanceWeek1 = _status.map((each, index) => {
-            return dummy1[0].progress[index][0].attendanceWeek;
-        });
-        const _attendanceWeek2 = _status.map((each, index) => {
-            return dummy1[1].progress[index][0].attendanceWeek;
-        });
-
-        //수업1,수업2의 각각의 주차별 출석현황
-        this.setState({
-            attendanceWeek1: _attendanceWeek1,
-            attendanceWeek2: _attendanceWeek2,
-        });
-        this.judgeAttendance(_attendanceWeek1, _attendanceWeek2);
-        this.takeClass(_attendance1, _attendanceWeek1);
-    };
-
-    judgeAttendance = (_attendanceWeek1, _attendanceWeek2) => {
-        //출석 판별 후 id값 대입
-        const _lastAttendance1 = _attendanceWeek1.map((each, index) => {
-            if (each === "O") {
-                return "attendance";
-            } else {
-                return "absence";
-            }
-        });
-        const _lastAttendance2 = _attendanceWeek2.map((each, index) => {
-            if (each === "O") {
-                return "attendance";
-            } else {
-                return "absence";
-            }
-        });
-
-        this.setState({
-            lastAttendance1: _lastAttendance1,
-            lastAttendance2: _lastAttendance2,
-        });
-    };
-
-    takeClass = (_attendance1, _attendanceWeek) => {
-        //수업1의 출석 전체, 수업1의 각 주 출석
-        //몇교시부터 들어야 하는가
-        const _class = _attendance1.map((item1, index1) => {
-            return item1.map((item2, index2) => {
-                if (item2 === "O") {
-                    return null;
-                } else {
-                    return index1 + 1;
-                }
+        const _attendance = dummy1.map((item1, index1) => {
+            return item1.progress.map((item2, index2) => {
+                return item2.map((item3, index3) => {
+                    return item3.attendance;
+                });
             });
         });
-        const __class = Array.from(_class);
-        __class.map((item, index) => {
-            item.sort();
+        //모든 수업의 출석 전체 현황 attendance
+        this.setState({
+            status: _status,
+            attendance: _attendance,
         });
-        const ___class = __class.map((item, index) => {
-            return item[0];
+
+        const _attendanceWeek = dummy1.map((item1, index1) => {
+            return item1.progress.map((item2, index2) => {
+                return item2[0].attendanceWeek;
+            });
         });
+        //수업1,수업2의 각각의 주차별 출석현황
+        this.setState({
+            attendanceWeek: _attendanceWeek,
+        });
+        this.judgeAttendance(_attendance, _attendanceWeek);
+        this.takeClass(_attendance, _attendanceWeek);
+    };
+
+    judgeAttendance = (_attendance, _attendanceWeek) => {
+        //출석 판별 후 id값 대입 (주차 출석현황 파악)
+        const { week } = this.state;
+        // console.log("week :>> ", week);
+        const _lastAttendance = _attendanceWeek.map((item, index) => {
+            if (item[week.week - 1] === "O") {
+                return "attendance";
+            } else if (item[week.week - 1] === "▲") {
+                return "late";
+            } else if (item[week.week - 1] === "X") {
+                return "absence";
+            } else {
+                return "early";
+            }
+        });
+        //모든과목의 1주차 출석현황
+        const _test = [];
+        const newAttendanceWeek = Array(_attendanceWeek);
+        const nAT = newAttendanceWeek;
+        for (var i = 0; i < 16; i++) {
+            const __test = _attendanceWeek.map((item) => {
+                return item.shift();
+            });
+            _test.push(__test);
+        }
+        this.setState({
+            lastAttendance: _lastAttendance,
+        });
+    };
+
+    takeClass = (_attendance, _attendanceWeek) => {
+        //수업1의 출석 전체, 수업1의 각 주 출석
+        //몇교시부터 들어야 하는가
+        // const _class = _attendance1.map((item1, index1) => {
+        //     return item1.map((item2, index2) => {
+        //         if (item2 === "O") {
+        //             return null;
+        //         } else {
+        //             return index1 + 1;
+        //         }
+        //     });
+        // });
+        // const __class = Array.from(_class);
+        // __class.map((item, index) => {
+        //     item.sort();
+        // });
+        // const ___class = __class.map((item, index) => {
+        //     return item[0];
+        // });
         //안 들은 수업이 있는 주차 배열
         //attendance배열의 item을 map비교해서 "X"가 있나없나, 있으면 index+1, 없으면 null ->> sort() ->>
-        this.setState({
-            class1: ___class,
-        });
+        // this.setState({
+        //     class1: ___class,
+        // });
         //안들은 수업들이 몇주차인지 class1에 배열로 저장
     };
 
@@ -154,34 +151,19 @@ class Graph extends PureComponent {
             name,
             firstName,
             class1,
-            attendance1,
-            attendance2,
-            attendanceWeek1,
-            attendanceWeek2,
-            lastAttendance1,
-            lastAttendance2,
+            attendance,
+            attendanceWeek,
+            lastAttendance,
             graphCount,
             status,
         } = this.state;
-        // console.log("name :>> ", name);
-        // console.log("attendance1 :>> ", attendance1);
-        // console.log("attendance2 :>> ", attendance2);
-        // console.log("status :>> ", status);
-        console.log(
-            "몇교시수업부터 들어야 되는가 :>> ",
-            attendance1[attendanceWeek1.indexOf("X")]
-        );
-        console.log("몇주차부터 들어야되냐 :>> ", class1);
-        // console.log("dummy1[0].progress :>> ", dummy1[0].progress);
-        // console.log("status :>> ", status);
+        // console.log("attendanceWeek :>> ", attendanceWeek);
         return (
             <div className="graghWhole">
                 <div className="gragh">
-                    {/* {graphCount.map((item) => (
-                        <div id={lastAttendance1[item]}></div>
-                    ))} */}
-                    <div id={lastAttendance1[0]}></div>
-                    <div id={lastAttendance2[0]}></div>
+                    {count.map((item, index) => {
+                        return <div id={lastAttendance[index]} />;
+                    })}
                 </div>
                 <div className="color">
                     {count.map((item, index) => (
