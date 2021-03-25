@@ -13,10 +13,8 @@ class Graph extends PureComponent {
         count: ["one", "two", "three", "four", "five", "six", "seven"], //수업 수
         name: [], //수업이름
         firstName: [], //수업이름앞글자
-        // attendanceWeek: {
-        attendanceWeek1: [], //총 16개 (주차 출석)
-        attendanceWeek2: [],
-        // },
+        attendanceWeek1: [],
+        attedanceWeek2: [],
         // attendance: {
         attendance1: [], //수업1의 출석 전체[["O", "X", "X"],["X", "X", "X"],["", "", ""], ...]
         attendance2: [], //수업2의 출석 전체
@@ -90,14 +88,14 @@ class Graph extends PureComponent {
         const _attendanceWeek2 = _status.map((each, index) => {
             return dummy1[1].progress[index][0].attendanceWeek;
         });
+
         //수업1,수업2의 각각의 주차별 출석현황
         this.setState({
-            // attendance:
             attendanceWeek1: _attendanceWeek1,
             attendanceWeek2: _attendanceWeek2,
         });
         this.judgeAttendance(_attendanceWeek1, _attendanceWeek2);
-        // this.takeClass(_attendance, _attendanceWeek);
+        this.takeClass(_attendance1, _attendanceWeek1);
     };
 
     judgeAttendance = (_attendanceWeek1, _attendanceWeek2) => {
@@ -123,9 +121,10 @@ class Graph extends PureComponent {
         });
     };
 
-    takeClass = (_attendance, _attendanceWeek) => {
+    takeClass = (_attendance1, _attendanceWeek) => {
+        //수업1의 출석 전체, 수업1의 각 주 출석
         //몇교시부터 들어야 하는가
-        const _class = _attendance.map((item1, index1) => {
+        const _class = _attendance1.map((item1, index1) => {
             return item1.map((item2, index2) => {
                 if (item2 === "O") {
                     return null;
@@ -157,7 +156,8 @@ class Graph extends PureComponent {
             class1,
             attendance1,
             attendance2,
-            attendanceWeek,
+            attendanceWeek1,
+            attendanceWeek2,
             lastAttendance1,
             lastAttendance2,
             graphCount,
@@ -167,16 +167,13 @@ class Graph extends PureComponent {
         // console.log("attendance1 :>> ", attendance1);
         // console.log("attendance2 :>> ", attendance2);
         // console.log("status :>> ", status);
-        // console.log("attendanceWeek :>> ", attendanceWeek);
-        // console.log(attendance1[attendanceWeek.indexOf("X")]);
-        // console.log(
-        //     "몇교시수업부터 들어야 되는가 :>> ",
-        //     attendance1[attendanceWeek.indexOf("X")]
-        // );
-        // console.log("몇교시부터 들어야되냐? :>> ", class1);
+        console.log(
+            "몇교시수업부터 들어야 되는가 :>> ",
+            attendance1[attendanceWeek1.indexOf("X")]
+        );
+        console.log("몇주차부터 들어야되냐 :>> ", class1);
         // console.log("dummy1[0].progress :>> ", dummy1[0].progress);
         // console.log("status :>> ", status);
-        console.log("각 주차 나누는거부터");
         return (
             <div className="graghWhole">
                 <div className="gragh">
