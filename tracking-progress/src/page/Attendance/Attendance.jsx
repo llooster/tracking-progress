@@ -8,23 +8,23 @@ import Graph from "../Graph";
 class Attendance extends PureComponent {
     state = {
         attendanceCount: [0, 1, 2, 3],
-        week: [],
+        week: [1, 2, 3, 4, 5, 6, 7, 8],
     };
 
-    componentDidMount() {
-        const { setWeek } = this;
-        setWeek();
-    }
-    setWeek = () => {
-        const _week = Array(16)
-            .fill()
-            .map((item, index) => {
-                return index + 1;
-            });
-        this.setState({
-            week: _week,
-        });
-    };
+    // componentDidMount() {
+    //     const { setWeek } = this;
+    //     setWeek();
+    // }
+    // setWeek = () => {
+    //     const _week = Array(16)
+    //         .fill()
+    //         .map((item, index) => {
+    //             return index + 1;
+    //         });
+    //     this.setState({
+    //         week: _week,
+    //     });
+    // };
     render() {
         // console.log("Attendance :>> ", this.props.match.params.trackerId);
         const { step } = this.props;

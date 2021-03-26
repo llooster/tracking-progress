@@ -5,8 +5,9 @@ import GetValue from "../page/Home/GetTheValue/GetValue";
 import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
-// import Gragh from "../page/Gragh/Gragh";
 import Main from "../page/Home/Main";
+
+import ClassTest from "../page/ClassTest";
 
 class App extends Component {
     state = {
@@ -49,7 +50,7 @@ class App extends Component {
         return (
             <>
                 <LeftBar />
-                <Switch>
+                {/* <Switch>
                     <Route exact path="/">
                         <Login
                             step={step[0]}
@@ -81,10 +82,11 @@ class App extends Component {
                             explain={explain[3]}
                             moodle={moodle}
                         />
-                        {/* <Gragh /> */}
                     </Route>
                     <Route path="/main" component={Main} />
-                </Switch>
+                    
+                </Switch> */}
+                <ClassTest />
             </>
         );
     }

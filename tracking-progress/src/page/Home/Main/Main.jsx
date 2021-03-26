@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import "../Login/Login.css";
 // import "../../../styleSheets/common.css";
 import LeftBar from "../../../component/LeftBar";
 
@@ -13,8 +12,8 @@ class Main extends PureComponent {
                 id: "",
                 password: "",
             },
-            //   id:"",
-            //   password:""
+            // id: "",
+            // password: "",
         };
     }
 

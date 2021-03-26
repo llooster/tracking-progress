@@ -1,25 +1,74 @@
 import React, { PureComponent } from "react";
-import dummy2 from "../../component/table/dummy2.json";
+import dummy1 from "../../component/table/dummy1.json";
+import "./ClassTest.css";
 
 class ClassTest extends PureComponent {
     state = {
-        class: dummy2[0].course.name,
+        name: [],
         week: [],
         attendance: [],
+        color: [
+            "color1",
+            "color2",
+            "color3",
+            "color4",
+            "color5",
+            "color6",
+            "color7",
+        ],
     };
-    // getClassName = () => {
-    //     const name1 = dummy2[0].course.name;
-    //     this.setState({
-    //         className: className.unshift(name1),
-    //     });
-    // };
+    componentDidMount() {
+        const { getName } = this;
+        getName();
+    }
+    getName = () => {
+        // 수업명 가져오기
+        const { name } = this.state;
+        let _name = Array(...name);
+        _name = dummy1.map((item, index) => {
+            return item.course.name;
+        });
+        this.setState({
+            name: _name,
+        });
+    };
+
     render() {
-        // this.getClassName();
-        // const {class} = this.state;
-        // console.log("class :>> ", class);
+        const { name, color } = this.state;
+        console.log("color :>> ", color);
         return (
-            <div>
-                <div>12sadfds3</div>
+            <div id="classWhole">
+                {color.map((item, index) => {
+                    return (
+                        <div id="className">
+                            {" "}
+                            {name[index]}
+                            <span className={item}></span>
+                        </div>
+                    );
+                })}
+
+                {/* <div id="className">
+                    {name[0]} <span className="color1"></span>
+                </div>
+                <div id="className">
+                    {name[1]} <span className="color2"></span>
+                </div>
+                <div id="className">
+                    {name[2]} <span className="color3"></span>
+                </div>
+                <div id="className">
+                    {name[3]} <span className="color4"></span>
+                </div>
+                <div id="className">
+                    {name[4]} <span className="color5"></span>
+                </div>
+                <div id="className">
+                    {name[5]} <span className="color6"></span>
+                </div>
+                <div id="className">
+                    {name[6]} <span className="color7"></span>
+                </div> */}
             </div>
         );
     }

@@ -24,7 +24,7 @@ class Graph extends PureComponent {
         status: [], //16주차를 해야됨
         //
         // 한 수업당: 주차별출석현황O, 수업별X, 교시별출석(progress[주차][attendance1]),
-        week: this.props,
+        // week: this.props,
     };
 
     componentDidMount() {
@@ -90,14 +90,14 @@ class Graph extends PureComponent {
 
     judgeAttendance = (_attendance, _attendanceWeek) => {
         //출석 판별 후 id값 대입 (주차 출석현황 파악)
-        const { week } = this.state;
-        // console.log("week :>> ", week);
+        const { week } = this.props;
+        console.log("week :>> ", week);
         const _lastAttendance = _attendanceWeek.map((item, index) => {
-            if (item[week.week - 1] === "O") {
+            if (item[week - 1] === "O") {
                 return "attendance";
-            } else if (item[week.week - 1] === "▲") {
+            } else if (item[week - 1] === "▲") {
                 return "late";
-            } else if (item[week.week - 1] === "X") {
+            } else if (item[week - 1] === "X") {
                 return "absence";
             } else {
                 return "early";
