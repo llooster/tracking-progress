@@ -58,23 +58,14 @@ class Graph extends PureComponent {
     getAttendance = () => {
         //수업 2개가 각각 몇주차까지 있나
         const { status } = this.state;
-        const _status = dummy1[0].progress.map((item, index) => {
-            return index;
-        });
+        const _status = dummy1[0].progress.map((item, index) => index);
         //몇주차까지있나 ->> status (모든 수업이 16주)
-        const _attendance = dummy1.map((item1, index1) => {
-            return item1.progress.map((item2, index2) => {
-                return item2.map((item3, index3) => {
-                    return item3.attendance;
-                });
-            });
-        });
+        const _attendance = dummy1.map((item1, index1) =>
+            item1.progress.map((item2, index2) =>
+                item2.map((item3, index3) => item3.attendance)
+            )
+        );
         //모든 수업의 출석 전체 현황 attendance
-        this.setState({
-            status: _status,
-            attendance: _attendance,
-        });
-
         const _attendanceWeek = dummy1.map((item1, index1) => {
             return item1.progress.map((item2, index2) => {
                 return item2[0].attendanceWeek;
@@ -83,6 +74,8 @@ class Graph extends PureComponent {
         //수업1,수업2의 각각의 주차별 출석현황
         this.setState({
             attendanceWeek: _attendanceWeek,
+            status: _status,
+            attendance: _attendance,
         });
         this.judgeAttendance(_attendance, _attendanceWeek);
         this.takeClass(_attendance, _attendanceWeek);
@@ -91,7 +84,7 @@ class Graph extends PureComponent {
     judgeAttendance = (_attendance, _attendanceWeek) => {
         //출석 판별 후 id값 대입 (주차 출석현황 파악)
         const { week } = this.props;
-        console.log("week :>> ", week);
+
         const _lastAttendance = _attendanceWeek.map((item, index) => {
             if (item[week - 1] === "O") {
                 return "attendance";
@@ -160,14 +153,22 @@ class Graph extends PureComponent {
         // console.log("attendanceWeek :>> ", attendanceWeek);
         return (
             <div className="graghWhole">
+                1주차
                 <div className="gragh">
-                    {count.map((item, index) => {
-                        return <div id={lastAttendance[index]} />;
-                    })}
+                    {count.map((item, index) => (
+                        <div
+                            id={lastAttendance[index]}
+                            key={index.toString()}
+                        />
+                    ))}
                 </div>
                 <div className="color">
                     {count.map((item, index) => (
-                        <div id="classColor" className={item}></div>
+                        <div
+                            id="classColor"
+                            className={item}
+                            key={index.toString()}
+                        />
                     ))}
                 </div>
             </div>

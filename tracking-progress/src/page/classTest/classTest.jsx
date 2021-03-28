@@ -40,8 +40,7 @@ class ClassTest extends PureComponent {
             <div id="classWhole">
                 {color.map((item, index) => {
                     return (
-                        <div id="className">
-                            {" "}
+                        <div id="className" key={index.toString()}>
                             {name[index]}
                             <span className={item}></span>
                         </div>

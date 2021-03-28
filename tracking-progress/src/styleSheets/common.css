@@ -1,146 +1,176 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
-.whole {
+#whole {
+    margin-right: 0;
     display: flex;
-    transform: translate(10%, 0);
-    width: 80%;
-}
-.Tracking-Progress {
-    /* float: left;/ */
-    position: relative;
-    /* transform: translate(40%, 0); */
-    width: 35%;
-    max-width: 320px;
-    min-width: 220px;
+    flex-direction: row;
     height: 100vh;
-    background-color: rgb(227, 227, 227);
-    color: rgb(80, 80, 80);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.Tracking-Progress .text {
-    width: 60%;
-    height: auto;
-    overflow: auto;
-    font-size: 200%;
-    color: gray;
-    font-weight: 700;
-    letter-spacing: -0.1px;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, 50px);
-    user-select: none;
-    text-align: center;
-}
-.Step {
-    width: 65%;
-    max-width: 780px;
-    min-width: 510px;
-    height: auto;
-    display: flex;
+    min-height: 500px;
     position: relative;
+}
+.leftBar {
+    /* position */
+    float: left;
+    margin-left: 100px;
+    width: 300px;
+    height: 100vmax;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    background-color: rgb(214, 214, 214);
+    font-size: 30px;
 }
-.Step .explain {
+
+.leftBar > .text {
+    width: 180px;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(0, 0, 209);
+}
+.stance {
+    /* position: absolute; */
     width: 100%;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
     position: absolute;
-    top: 50px;
-    left: 30px;
+    padding-left: 60px;
 }
-.explain div:first-child {
+.section {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-width: 480px;
+    margin: 40px auto 0;
+}
+.section .step {
     font-size: 40px;
     color: rgb(103, 103, 103);
+    font-weight: 500;
     margin-bottom: 10px;
 }
-.explain span,
-.contents {
-    position: absolute;
+
+.section .explain {
     font-size: 18px;
+    font-weight: 400;
     color: rgb(103, 103, 103);
     left: 2px;
 }
-.Step button {
-    font-size: 20px;
-    color: gray;
-    width: 300px;
-    height: 60px;
-    border: 0.5px solid rgb(157, 157, 157);
-    border-radius: 8px;
-    background-color: #fff;
-    cursor: pointer;
-}
-.Step button:nth-child(2):hover {
-    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+
+.contents,
+.value {
+    width: 600px;
+    min-width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .contents {
-    width: 100%;
-    height: auto;
-    margin-left: 30px;
-    font-size: 18px;
-    letter-spacing: -0.2px;
-    color: rgb(136, 136, 136);
+    align-items: center;
+}
+.process {
+    align-items: left;
+}
+.getValue {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.contents > a {
+    width: 300px;
+    height: 45px;
+    border: solid gray 0.5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+}
+a {
+    text-decoration: unset;
+    color: rgb(0, 0, 209);
+}
+
+.contents > a:hover {
+    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+}
+
+.shift {
+    width: 500px;
+    min-width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.shift a {
+    width: 80px;
+    margin-left: 10px;
+}
+/* .shift a:hover {
+    user-select: none;
+    /* cursor: pointer; 
+} */
+button {
+    border: solid gray 0.5px;
+    border-radius: 10px;
+    /* margin-left: 10px; */
+}
+.shift button {
+    width: 80px;
+    height: 43px;
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+    background-color: white;
+}
+.shift button:hover {
+    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+    user-select: none;
+    cursor: pointer;
 }
 h2 {
     font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-h2 a {
-    text-decoration: underline;
-    color: rgb(0, 0, 223);
     font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: -0.2px;
+    color: rgb(136, 136, 136);
 }
 
-.Step > button:last-child {
-    position: absolute;
-    bottom: 80px;
-    right: 50px;
-    font-size: 18px;
-    color: gray;
-    width: 250px;
-    height: 50px;
-    border: 0.5px solid rgb(191, 191, 191);
-    border-radius: 8px;
-    background-color: #fff;
-    cursor: pointer;
-}
-.Step button:last-child:hover {
-    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
-    font-weight: 700;
-}
-
-.moodle {
+.moodleText {
     color: rgb(103, 103, 103);
-    margin-bottom: 5px;
-    margin-left: 40px;
+    margin: 0 0 5px 5px;
 }
-.inputBox .input {
-    margin-left: 35px;
+.inputValue {
+    width: auto;
+    display: flex;
+    flex-direction: row;
 }
-.input {
-    width: 100%;
+.inputId {
+    width: 350px;
 }
-.input input {
-    display: inline-block;
-    width: 450px;
-    min-width: 200px;
+.inputMoodle {
+    width: 350px;
     height: 45px;
     border: solid gray 0.5px;
-    border-radius: 8px;
-    padding-left: 10px;
-    font-size: 17px;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 5px;
 }
-.input button {
+.inputValue button {
     margin-left: 5px;
     color: rgb(103, 103, 103);
     background-color: rgb(232, 232, 232);
@@ -148,6 +178,11 @@ h2 a {
     border-radius: 8px;
     width: 80px;
     height: 45px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
+}
+.inputValue button:hover {
+    box-shadow: 0 0 3px 0 rgb(121, 121, 121);
+    user-select: none;
+    cursor: pointer;
 }

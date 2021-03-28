@@ -50,7 +50,7 @@ class App extends Component {
         return (
             <>
                 <LeftBar />
-                {/* <Switch>
+                <Switch>
                     <Route exact path="/">
                         <Login
                             step={step[0]}
@@ -84,9 +84,18 @@ class App extends Component {
                         />
                     </Route>
                     <Route path="/main" component={Main} />
-                    
-                </Switch> */}
-                <ClassTest />
+                    {/* <Route path="/main">
+                        <Main
+                            value={value}
+                            step={step[2]}
+                            explain={explain[2]}
+                            inputValue={inputValue}
+                            enterKey={enterKey}
+                            next={next}
+                        />
+                    </Route> */}
+                </Switch>
+                {/* <ClassTest /> */}
             </>
         );
     }

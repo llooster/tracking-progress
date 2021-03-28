@@ -9,6 +9,10 @@
     min-height: 500px;
     position: relative;
 }
+.stance {
+    width: 500px;
+    height: auto;
+}
 .getValue {
     display: flex;
     flex-direction: column;
