@@ -1,0 +1,1524 @@
+{
+    "result": [
+        {
+            "course": {
+                "name": "긍정마인드와인맥만들기 (00B00169_A1)",
+                "professional": "김석곤"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "1-1(인간관계론의 형성과정)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:12 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "1-2(인간관계의 어려움)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:09 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "2-1(자아 개념의 이해)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:11 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "2-2(자아 정체감의 발달과정)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:16 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "3-1(자아분석)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:22 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "3-2(성격검사-에고그램",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:11 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "4-1(대인지각)",
+                        "neededTime": "23:00",
+                        "lectureTime": "25:55 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "4-2(호감형성과정)",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:16 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "5-1(대인관계의 의미)",
+                        "neededTime": "22:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "5",
+                        "name": "5-2(의사소통의 유형)",
+                        "neededTime": "23:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "6-1(대인관계의기술)",
+                        "neededTime": "22:00",
+                        "lectureTime": "-",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    },
+                    {
+                        "week": "6",
+                        "name": "6-2(나-메세지)",
+                        "neededTime": "23:00",
+                        "lectureTime": "-",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "7-1(스트레스의개념)",
+                        "neededTime": "23:00",
+                        "lectureTime": "-",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    },
+                    {
+                        "week": "7",
+                        "name": "7-2(내적스트레스원)",
+                        "neededTime": "23:00",
+                        "lectureTime": "-",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "응급처치및건강관리 (00B00183_A2)",
+                "professional": "고재면"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "응급처치 및 건강관리 1주차 1강",
+                        "neededTime": "26:00",
+                        "lectureTime": "28:59 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "응급처치 및 건강관리 1주차 2강",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:00 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "응급처치 및 건강관리 2주차 1강",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:29 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "응급처치 및 건강관리 2주차 2강",
+                        "neededTime": "28:00",
+                        "lectureTime": "31:52 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "응급처치 및 건강관리 3주차 1강",
+                        "neededTime": "24:00",
+                        "lectureTime": "27:43 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "응급처치 및 건강관리 3주차 2강",
+                        "neededTime": "26:00",
+                        "lectureTime": "29:07 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "응급처치 및 건강관리 4주차 1강",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:51 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "응급처치 및 건강관리 4주차 2강",
+                        "neededTime": "28:00",
+                        "lectureTime": "31:27 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "응급처치 및 건강관리 5주차 1강",
+                        "neededTime": "25:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "5",
+                        "name": "응급처치 및 건강관리 5주차 2강",
+                        "neededTime": "24:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "스마트장치SW기초 (08D30039_A)NEW",
+                "professional": "이원섭"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "1-0 수업 소개",
+                        "neededTime": "10:00",
+                        "lectureTime": "11:11 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "1-1 사물인터넷 소개1",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:17 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "1-2 사물인터넷 소개2",
+                        "neededTime": "22:00",
+                        "lectureTime": "25:23 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "1-3 사물인터넷 소개3",
+                        "neededTime": "23:00",
+                        "lectureTime": "26:18 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "2-1 nodeRed설치",
+                        "neededTime": "23:00",
+                        "lectureTime": "26:33 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "2-2 nodeRed첫예제",
+                        "neededTime": "22:00",
+                        "lectureTime": "24:29 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "2-3 nodeRed 중요노드1",
+                        "neededTime": "24:00",
+                        "lectureTime": "27:31 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "3-1 inject, debug 실습",
+                        "neededTime": "34:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "3",
+                        "name": "3-2 change switch 노드",
+                        "neededTime": "24:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "3",
+                        "name": "3-3 function 노드",
+                        "neededTime": "36:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "4-1 중요노드2",
+                        "neededTime": "27:00",
+                        "lectureTime": "30:13 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "4-2 중요노드3",
+                        "neededTime": "24:00",
+                        "lectureTime": "26:51 5회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "4-3 중요노드4",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:34 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "시제품제작실습 (08D30041_A)",
+                "professional": "이준성"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "시제품제작실습 OT 동영상",
+                        "neededTime": "20:00",
+                        "lectureTime": "22:18 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "시제품제작실습_제1강. 시제품제작절차",
+                        "neededTime": "27:00",
+                        "lectureTime": "30:34 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "OrCAD를 적용한 시제품 개발절차 및 방법",
+                        "neededTime": "55:00",
+                        "lectureTime": "01:01:59 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "시제품제작실습_동영상강의_제2강.설계자동화기법과 OrCAD활용(Simulation)이론",
+                        "neededTime": "54:00",
+                        "lectureTime": "01:00:39 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "시제품제작실습_동영상강의_제2강2.OrCAD_Simulation실습",
+                        "neededTime": "32:00",
+                        "lectureTime": "35:38 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "시제품제작실습_동영상강의_제3강. R, L, C",
+                        "neededTime": "58:00",
+                        "lectureTime": "01:05:09 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "시제품제작실습_제4강_다이오드(복습용)",
+                        "neededTime": "42:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "창업과진로 (08D30043_A)",
+                "professional": "박수정"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "제어지능SW개발 (08D30049_A)",
+                "professional": "도경민"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "제어지능SW개발 1-1 강의 동영상",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:52 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "제어지능SW개발 1-2 강의 동영상",
+                        "neededTime": "24:00",
+                        "lectureTime": "27:20 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "제어지능SW개발 1-3 강의 동영상",
+                        "neededTime": "23:00",
+                        "lectureTime": "26:39 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "제어지능SW개발 2-1 강의 동영상",
+                        "neededTime": "33:00",
+                        "lectureTime": "37:44 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "제어지능SW개발 2-2 강의 동영상",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:11 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "제어지능SW개발 2-3 강의 동영상",
+                        "neededTime": "38:00",
+                        "lectureTime": "42:15 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "제어지능SW개발 3-1 강의 동영상",
+                        "neededTime": "30:00",
+                        "lectureTime": "34:21 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "제어지능SW개발 3-2 강의 동영상",
+                        "neededTime": "27:00",
+                        "lectureTime": "30:15 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "제어지능SW개발 3-3 강의 동영상",
+                        "neededTime": "30:00",
+                        "lectureTime": "34:08 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "1) 제어지능SW개발 4-1 강의 동영상",
+                        "neededTime": "31:00",
+                        "lectureTime": "34:54 1회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "2) 제어지능SW개발 4-2 강의 동영상",
+                        "neededTime": "40:00",
+                        "lectureTime": "44:36 7회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "3) 제어지능SW개발 4-3 강의 동영상",
+                        "neededTime": "40:00",
+                        "lectureTime": "45:20 5회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "1) 제어지능SW개발 5-1 강의 동영상",
+                        "neededTime": "28:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "5",
+                        "name": "2) 제어지능SW개발 5-2 강의 동영상",
+                        "neededTime": "30:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        },
+        {
+            "course": {
+                "name": "통신회로설계 (08D30051_A)",
+                "professional": "박태준"
+            },
+            "progress": [
+                [
+                    {
+                        "week": "1",
+                        "name": "통신회로설계 1주차 1교시",
+                        "neededTime": "28:00",
+                        "lectureTime": "32:10 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "통신회로설계 1주차 2교시",
+                        "neededTime": "28:00",
+                        "lectureTime": "31:40 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "1",
+                        "name": "통신회로설계 1주차 3교시",
+                        "neededTime": "31:00",
+                        "lectureTime": "35:34 6회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "2",
+                        "name": "통신회로설계 2주차 1교시",
+                        "neededTime": "26:00",
+                        "lectureTime": "29:10 5회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "통신회로설계 2주차 2교시",
+                        "neededTime": "27:00",
+                        "lectureTime": "30:14 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "2",
+                        "name": "통신회로설계 2주차 3교시",
+                        "neededTime": "30:00",
+                        "lectureTime": "34:21 3회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "3",
+                        "name": "통신회로설계 3주차 1교시",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:05 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "통신회로설계 3주차 2교시",
+                        "neededTime": "26:00",
+                        "lectureTime": "29:58 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "3",
+                        "name": "통신회로설계 3주차 3교시",
+                        "neededTime": "26:00",
+                        "lectureTime": "29:00 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "4",
+                        "name": "통신회로설계 4주차 1교시",
+                        "neededTime": "23:00",
+                        "lectureTime": "26:37 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "통신회로설계 4주차 2교시",
+                        "neededTime": "28:00",
+                        "lectureTime": "31:43 2회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    },
+                    {
+                        "week": "4",
+                        "name": "통신회로설계 4주차 3교시",
+                        "neededTime": "25:00",
+                        "lectureTime": "28:53 4회 열람",
+                        "attendance": "O",
+                        "attendanceWeek": "O"
+                    }
+                ],
+                [
+                    {
+                        "week": "5",
+                        "name": "통신회로설계 5주차 1교시",
+                        "neededTime": "28:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "5",
+                        "name": "통신회로설계 5주차 2교시",
+                        "neededTime": "24:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    },
+                    {
+                        "week": "5",
+                        "name": "통신회로설계 5주차 3교시",
+                        "neededTime": "32:00",
+                        "lectureTime": "-",
+                        "attendance": "X",
+                        "attendanceWeek": "X"
+                    }
+                ],
+                [
+                    {
+                        "week": "6",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "7",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "8",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "9",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "10",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "11",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "12",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "13",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "14",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "15",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ],
+                [
+                    {
+                        "week": "16",
+                        "name": "",
+                        "neededTime": "",
+                        "lectureTime": "",
+                        "attendance": "",
+                        "attendanceWeek": ""
+                    }
+                ]
+            ]
+        }
+    ]
+}

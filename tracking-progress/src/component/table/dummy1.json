@@ -1,7 +1,7 @@
 [
     {
         "course": {
-            "name": "1수업(수업이름)",
+            "name": "긍정마인드와인맥만들기",
             "professional": "김석곤"
         },
         "progress": [
@@ -153,7 +153,7 @@
     },
     {
         "course": {
-            "name": "2수업"
+            "name": "응급처치및건강관리"
         },
         "progress": [
             [
@@ -304,7 +304,7 @@
     },
     {
         "course": {
-            "name": "3수업",
+            "name": "스마트장치SW기초",
             "professional": "김석곤"
         },
         "progress": [
@@ -456,7 +456,7 @@
     },
     {
         "course": {
-            "name": "4수업"
+            "name": "시제품제작실습"
         },
         "progress": [
             [
@@ -607,7 +607,7 @@
     },
     {
         "course": {
-            "name": "5수업",
+            "name": "창업과진로",
             "professional": "김석곤"
         },
         "progress": [
@@ -759,7 +759,7 @@
     },
     {
         "course": {
-            "name": "6수업"
+            "name": "제어지능SW개발"
         },
         "progress": [
             [
@@ -910,7 +910,7 @@
     },
     {
         "course": {
-            "name": "7수업",
+            "name": "통신회로설계",
             "professional": "김석곤"
         },
         "progress": [

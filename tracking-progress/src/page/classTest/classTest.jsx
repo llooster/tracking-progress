@@ -35,40 +35,25 @@ class ClassTest extends PureComponent {
 
     render() {
         const { name, color } = this.state;
-        console.log("color :>> ", color);
+        // console.log("color :>> ", color);
         return (
-            <div id="classWhole">
-                {color.map((item, index) => {
-                    return (
-                        <div id="className" key={index.toString()}>
-                            {name[index]}
-                            <span className={item}></span>
-                        </div>
-                    );
-                })}
-
-                {/* <div id="className">
-                    {name[0]} <span className="color1"></span>
+            <>
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+                    rel="stylesheet"
+                />
+                <div id="classWhole">
+                    {color.map((item, index) => {
+                        return (
+                            <div id="className" key={index.toString()}>
+                                {name[index]}
+                                <span className={item}></span>
+                            </div>
+                        );
+                    })}
                 </div>
-                <div id="className">
-                    {name[1]} <span className="color2"></span>
-                </div>
-                <div id="className">
-                    {name[2]} <span className="color3"></span>
-                </div>
-                <div id="className">
-                    {name[3]} <span className="color4"></span>
-                </div>
-                <div id="className">
-                    {name[4]} <span className="color5"></span>
-                </div>
-                <div id="className">
-                    {name[5]} <span className="color6"></span>
-                </div>
-                <div id="className">
-                    {name[6]} <span className="color7"></span>
-                </div> */}
-            </div>
+            </>
         );
     }
 }

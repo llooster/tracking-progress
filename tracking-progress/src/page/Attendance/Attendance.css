@@ -1,38 +1,30 @@
 * {
     box-sizing: border-box;
 }
-#whole {
+/* #whole {
     margin-right: 5%;
     display: flex;
     flex-direction: row;
     height: 100vh;
     min-height: 500px;
     position: relative;
-}
-.stance {
-    width: 500px;
-    height: auto;
-}
-.getValue {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-}
+} */
+
 .graghPart {
     width: 800px;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
     align-items: center;
+    overflow: scroll;
+    padding-left: 60px;
 }
 .graghSet {
     width: 100%;
-    height: 250px;
+    height: auto;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 }

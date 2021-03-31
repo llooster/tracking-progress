@@ -38,7 +38,7 @@ class Attendance extends PureComponent {
         // console.log("Attendance :>> ", this.props.match.params.trackerId);
         const { step } = this.props;
         const { attendanceCount, week, isLoading } = this.state;
-
+        // console.log("week :>> ", week);
         if (isLoading) return null;
 
         return (
@@ -49,30 +49,13 @@ class Attendance extends PureComponent {
                         <div className="section">
                             <div className="step">{step}</div>
                         </div>
-                        <div className="graghPart">
-                            {/* {attendanceCount.map((item) => {
-                        return ( */}
-                            <div className="graghSet">
-                                <Graph week={week[0]} />
+                    </div>
+                    <div className="graghPart">
+                        {week.map((item, index) => (
+                            <div className="graghSet" key={index.toString()}>
+                                <Graph week={week[index]}></Graph>
                             </div>
-                            <div className="graghSet">
-                                <Graph week={week[1]} />
-                            </div>
-                            {/* <div className="graghSet">
-                                <Graph week={week[2]} />
-                                <Graph week={week[3]} />
-                            </div> */}
-                            {/* <div className="graghSet">
-                                <Graph week={week[4]} />
-                                <Graph week={week[5]} />
-                            </div>
-                            <div className="graghSet">
-                                <Graph week={week[6]} />
-                                <Graph week={week[7]} />
-                            </div> */}
-                            {/* );
-                        })} */}
-                        </div>
+                        ))}
                     </div>
                 </div>
             </>

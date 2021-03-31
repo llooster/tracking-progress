@@ -74,7 +74,6 @@ class Main extends PureComponent {
                                         name="id"
                                         placeholder="ID를 입력해주세요"
                                         onChange={onChangeInputText}
-                                        // onKeyPress={enterKey}
                                     />
                                     <input
                                         type="password"
@@ -85,15 +84,10 @@ class Main extends PureComponent {
                                         onKeyPress={enterKey}
                                     />
                                 </div>
-                                {/* <Link to={`/select/${moodle}`}> */}
                                 <button onClick={onSubmit}>확인</button>
-                                {/* </Link> */}
                             </div>
                         </div>
                     </div>
-                    {/* <Link to={`/select/${moodle}`}>
-                        <button>{next[0]}</button>
-                    </Link> */}
                 </div>
             </div>
         );

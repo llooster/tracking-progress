@@ -16,7 +16,7 @@ class App extends Component {
             "Step 1. Login",
             "Step 2. Get the Value",
             "Step 3. Enter the Value",
-            "Attendace rate",
+            "Attendance",
         ],
         explain: [
             "induk 사이트에 로그인 합니다",
