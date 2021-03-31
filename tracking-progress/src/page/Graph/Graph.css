@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: "Nanum Gothic", sans-serif;
+    /* font-weight: 900; */
 }
 .graghWhole {
     display: flex;
@@ -14,6 +16,9 @@
     justify-content: center;
     border-bottom: solid rgb(206, 203, 203) 0.5px;
     height: auto;
+    font-weight: 400;
+    font-size: 20px;
+    color: gray;
 }
 .gragh {
     width: 100%;
@@ -27,11 +32,11 @@
 .gragh #absence {
     border-radius: 4px;
     background-color: rgb(203, 203, 203);
-    width: 60px;
+    width: 70px;
     height: 80px;
 
     animation-name: gauge-bar;
-    animation-duration: 400ms;
+    animation-duration: 600ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -49,19 +54,19 @@
 .gragh #late {
     border-radius: 4px;
     background-color: rgb(241, 254, 105);
-    width: 60px;
+    width: 70px;
     height: 140px;
 }
 .gragh #attendance {
     border-radius: 4px;
     background-color: rgb(171, 255, 122);
-    width: 60px;
+    width: 70px;
     height: 200px;
 }
 .gragh #early {
     border-radius: 4px;
     background-color: rgb(206, 206, 206);
-    width: 60px;
+    width: 70px;
     height: 10px;
 }
 .color {
@@ -73,7 +78,7 @@
 }
 #classColor {
     margin-top: 5px;
-    width: 60px;
+    width: 70px;
     height: 5px;
 }
 .one {
