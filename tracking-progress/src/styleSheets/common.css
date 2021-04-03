@@ -9,21 +9,30 @@
     min-height: 500px;
     /* position: relative; */
     margin-left: 400px;
+    /* background-color: rgb(222, 222, 222); */
 }
 .leftBar > .text {
     width: 180px;
-    margin-top: 70px;
+    height: 180px;
+    margin-top: 50px;
     text-align: center;
     font-weight: 600;
-    color: rgb(0, 0, 209);
+    padding-top: 55px;
+    color: rgb(80, 80, 80);
+    border-radius: 50%;
+    background: #ededed;
+    box-shadow: 10px 10px 20px #6e6e6e, -10px -10px 10px #ffffff;
+    user-select: none;
 }
+
 .section {
     display: flex;
     flex-direction: column;
     /* position: absolute; */
     width: 100%;
     min-width: 480px;
-    margin: 40px auto 0;
+    margin: 30px auto 7px;
+    user-select: none;
 }
 .section .step {
     font-size: 40px;
@@ -39,15 +48,25 @@
     left: 2px;
 }
 
-.contents,
-.value {
-    width: 600px;
-    min-width: 550px;
-    height: 500px;
+.contents {
+    width: auto;
+    min-width: 300px;
+    height: 100vh;
     display: flex;
+    padding-bottom: 20vh;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+.value {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    /* box-shadow: 0 0 10px -2px rgb(121, 121, 121); */
 }
 .contents {
     align-items: center;
@@ -127,11 +146,15 @@ h2 {
 .moodleText {
     color: rgb(103, 103, 103);
     margin: 0 0 5px 5px;
+    user-select: none;
 }
 .inputValue {
     width: auto;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .inputId {
     width: 350px;
@@ -148,19 +171,44 @@ h2 {
     color: gray;
     margin-bottom: 5px;
 }
+.inputMoodle:hover {
+    outline: none;
+}
+.inputMoodle:focus {
+    outline: none;
+}
 .inputValue button {
-    margin-left: 5px;
-    color: rgb(103, 103, 103);
-    background-color: rgb(232, 232, 232);
-    border: solid gray 0.5px;
-    border-radius: 8px;
-    width: 80px;
-    height: 45px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 211, 211);
+    border: none;
+    border-radius: 7px;
+    width: 70px;
+    height: 37px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
+    user-select: none;
+}
+.bt {
+    width: 70px;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .inputValue button:hover {
     box-shadow: 0 0 3px 0 rgb(121, 121, 121);
     user-select: none;
     cursor: pointer;
+    font-weight: 700;
+}
+.inputValue button:active {
+    border: none;
+    outline: none;
+    background-color: rgb(187, 187, 187);
+    width: 68px;
+    height: 36px;
+}
+.inputValue button:focus {
+    outline: none;
 }

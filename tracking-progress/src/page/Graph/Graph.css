@@ -6,9 +6,12 @@
 .graghWhole {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    width: 700px;
+    /* margin-bottom: 50px; */
+    width: 635px;
     height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 1px rgb(159, 159, 159);
 }
 .week-th {
     display: flex;
@@ -18,6 +21,7 @@
     height: auto;
     font-weight: 400;
     font-size: 20px;
+    padding-bottom: 3px;
     color: gray;
 }
 .gragh {
@@ -30,10 +34,15 @@
     margin-top: 30px;
 }
 .gragh #absence {
-    border-radius: 4px;
-    background-color: rgb(203, 203, 203);
+    border-radius: 5px;
+    background-color: rgb(177, 177, 177);
     width: 70px;
-    height: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(87, 87, 87);
 
     animation-name: gauge-bar;
     animation-duration: 600ms;
@@ -52,22 +61,42 @@
     }
 } */
 .gragh #late {
-    border-radius: 4px;
-    background-color: rgb(241, 254, 105);
+    border-radius: 5px;
+    /* background-color: rgb(241, 254, 105); */
+    background-color: rgb(215, 215, 215);
     width: 70px;
-    height: 140px;
+    height: 170px;
+    color: rgb(87, 87, 87);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .gragh #attendance {
-    border-radius: 4px;
-    background-color: rgb(171, 255, 122);
+    border-radius: 5px;
+    /* background-color: rgb(171, 255, 122); */
+    background-color: rgb(235, 235, 235);
     width: 70px;
-    height: 200px;
+    height: 250px;
+    color: rgb(0, 0, 0, 0);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .gragh #early {
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: rgb(206, 206, 206);
     width: 70px;
-    height: 10px;
+    height: 30px;
+    color: rgb(87, 87, 87);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .color {
     display: flex;

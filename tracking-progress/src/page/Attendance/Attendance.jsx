@@ -36,7 +36,7 @@ class Attendance extends PureComponent {
     };
     render() {
         // console.log("Attendance :>> ", this.props.match.params.trackerId);
-        const { step } = this.props;
+        const { step, explain } = this.props;
         const { attendanceCount, week, isLoading } = this.state;
         // console.log("week :>> ", week);
         if (isLoading) return null;
@@ -48,6 +48,7 @@ class Attendance extends PureComponent {
                     <div className="stance">
                         <div className="section">
                             <div className="step">{step}</div>
+                            <div className="explain">{explain}</div>
                         </div>
                     </div>
                     <div className="graghPart">

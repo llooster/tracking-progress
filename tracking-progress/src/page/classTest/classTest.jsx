@@ -35,7 +35,6 @@ class ClassTest extends PureComponent {
 
     render() {
         const { name, color } = this.state;
-        // console.log("color :>> ", color);
         return (
             <>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />

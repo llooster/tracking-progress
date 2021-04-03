@@ -7,8 +7,8 @@ class Main extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            explain: "induk 사이트에 로그인 정보를 입력 합니다",
-            step: "Step 0. Main",
+            explain: "학교 아이디로 로그인",
+            step: " Login",
             user: {
                 id: "",
                 password: "",
@@ -38,7 +38,7 @@ class Main extends PureComponent {
         } = this.state;
         console.log(`loginUser-----Id : ${id} Password : ${password}`);
         if (id !== "201708015" || password !== "gksruf101@") {
-            alert("다시 입력");
+            alert("아이디와 비밀번호를 확인하세요");
             return;
         } else {
             history.push(`/select/`);
@@ -55,7 +55,6 @@ class Main extends PureComponent {
         const { explain, step, user } = this.state;
         const { onChangeInputText, onSubmit, enterKey } = this;
         const { value, next, moodle } = this.props;
-        console.log("user :>> ", user);
         return (
             <div id="whole">
                 <div className="stance">
@@ -63,9 +62,11 @@ class Main extends PureComponent {
                         <div className="step">{step}</div>
                         <div className="explain">{explain}</div>
                     </div>
-                    <div className="contents">
-                        <div className="value">
-                            <div className="moodleText">MoodleSesstion</div>
+                </div>
+                <div className="contents">
+                    <div className="value">
+                        <div>
+                            <div className="moodleText">학번 비밀번호</div>
                             <div className="inputValue">
                                 <div className="inputId">
                                     <input
@@ -84,7 +85,9 @@ class Main extends PureComponent {
                                         onKeyPress={enterKey}
                                     />
                                 </div>
-                                <button onClick={onSubmit}>확인</button>
+                                <div className="bt">
+                                    <button onClick={onSubmit}>Login</button>
+                                </div>
                             </div>
                         </div>
                     </div>

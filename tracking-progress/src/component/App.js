@@ -1,29 +1,19 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Login from "../page/Home/Login/Login";
-import GetValue from "../page/Home/GetTheValue/GetValue";
-import EnterValue from "../page/Home/EnterTheValue/EnterValue";
+// import Login from "../page/Home/Login/Login";
+// import GetValue from "../page/Home/GetTheValue/GetValue";
+// import EnterValue from "../page/Home/EnterTheValue/EnterValue";
 import LeftBar from "../component/LeftBar";
 import Attendance from "../page/Attendance";
 import Main from "../page/Home/Main";
 
-import ClassTest from "../page/ClassTest";
+// import ClassTest from "../page/ClassTest";
 
 class App extends Component {
     state = {
         id: 1,
-        step: [
-            "Step 1. Login",
-            "Step 2. Get the Value",
-            "Step 3. Enter the Value",
-            "Attendance",
-        ],
-        explain: [
-            "induk 사이트에 로그인 합니다",
-            "크롤링을 위한 값을 가져옵니다. 아래는 Mac / Chrome 기준입니다.",
-            "Step 2. 에서 확인한 값을 입력하세요!",
-            "수업 출석표",
-        ],
+        step: ["Step 1. Login", "Attendance"],
+        explain: ["induk 사이트에 로그인 합니다", "수업 출석표"],
         next: ["next", "back"],
         moodle: "",
     };
@@ -51,51 +41,16 @@ class App extends Component {
             <>
                 <LeftBar />
                 <Switch>
-                    <Route exact path="/">
-                        <Login
-                            step={step[0]}
-                            explain={explain[0]}
-                            next={next[0]}
-                        />
-                    </Route>
-                    <Route path="/getValue">
-                        <GetValue
-                            step={step[1]}
-                            explain={explain[1]}
-                            next={next}
-                        />
-                    </Route>
-                    <Route path="/enterValue">
-                        <EnterValue
-                            step={step[2]}
-                            explain={explain[2]}
-                            inputValue={inputValue}
-                            value={value}
-                            enterKey={enterKey}
-                            next={next}
-                        />
-                    </Route>
-                    <Route path="/select">
+                    <Route exact path="/" component={Main} />
+                    <Route path="/select/">
                         <Route path="/select/:name" />
                         <Attendance
-                            step={step[3]}
-                            explain={explain[3]}
+                            step={step[1]}
+                            explain={explain[1]}
                             moodle={moodle}
                         />
                     </Route>
-                    <Route path="/main" component={Main} />
-                    {/* <Route path="/main">
-                        <Main
-                            value={value}
-                            step={step[2]}
-                            explain={explain[2]}
-                            inputValue={inputValue}
-                            enterKey={enterKey}
-                            next={next}
-                        />
-                    </Route> */}
                 </Switch>
-                {/* <ClassTest /> */}
             </>
         );
     }
