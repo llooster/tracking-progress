@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import "../../../styleSheets/common.css";
 // import "../Login/Login.css";
-import { Link } from "react-router-dom";
+import EnterValue from "../EnterTheValue";
 
 class Main extends PureComponent {
     constructor(props) {
@@ -56,43 +56,59 @@ class Main extends PureComponent {
         const { onChangeInputText, onSubmit, enterKey } = this;
         const { value, next, moodle } = this.props;
         return (
-            <div id="whole">
-                <div className="stance">
-                    <div className="section">
-                        <div className="step">{step}</div>
-                        <div className="explain">{explain}</div>
-                    </div>
-                </div>
-                <div className="contents">
-                    <div className="value">
-                        <div>
-                            <div className="moodleText">학번 비밀번호</div>
-                            <div className="inputValue">
-                                <div className="inputId">
-                                    <input
-                                        type="text"
-                                        className="inputMoodle"
-                                        name="id"
-                                        placeholder="ID를 입력해주세요"
-                                        onChange={onChangeInputText}
-                                    />
-                                    <input
-                                        type="password"
-                                        className="inputMoodle"
-                                        name="password"
-                                        placeholder="비밀번호를 입력해주세요"
-                                        onChange={onChangeInputText}
-                                        onKeyPress={enterKey}
-                                    />
-                                </div>
-                                <div className="bt">
-                                    <button onClick={onSubmit}>Login</button>
-                                </div>
-                            </div>
+            <>
+                <EnterValue></EnterValue>
+                <div id="whole">
+                    <div className="stance">
+                        <div className="section">
+                            <div className="step">{step}</div>
+                            <div className="explain">{explain}</div>
                         </div>
                     </div>
+                    <div className="mainContents">
+                        <link
+                            rel="preconnect"
+                            href="https://fonts.gstatic.com"
+                        />
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nunito:ital,wght@1,600;1,700;1,800&display=swap"
+                            rel="stylesheet"
+                        />
+                        Tracking
+                        <br />
+                        Progress
+                        {/* <div className="value">
+                            <div>
+                                <div className="moodleText">학번 비밀번호</div>
+                                <div className="inputValue">
+                                    <div className="inputId">
+                                        <input
+                                            type="text"
+                                            className="inputMoodle"
+                                            name="id"
+                                            placeholder="ID를 입력해주세요"
+                                            onChange={onChangeInputText}
+                                        />
+                                        <input
+                                            type="password"
+                                            className="inputMoodle"
+                                            name="password"
+                                            placeholder="비밀번호를 입력해주세요"
+                                            onChange={onChangeInputText}
+                                            onKeyPress={enterKey}
+                                        />
+                                    </div>
+                                    <div className="bt">
+                                        <button onClick={onSubmit}>
+                                            Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+                    </div>
                 </div>
-            </div>
+            </>
         );
     }
 }

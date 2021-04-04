@@ -11,14 +11,14 @@
 } */
 
 .graghPart {
-    width: 700px;
+    width: 710px;
     height: 100vh;
     /* display: flex; */
     /* flex-direction: column;
     justify-content: center; */
     align-items: center;
     overflow: scroll;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 .graghSet {
     width: 100%;

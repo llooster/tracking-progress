@@ -5,7 +5,7 @@ class LeftBar extends PureComponent {
     render() {
         return (
             <div className="leftBar">
-                <div className="text">Tracking Progress</div>
+                <div className="text"></div>
             </div>
         );
     }
