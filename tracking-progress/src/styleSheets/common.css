@@ -38,9 +38,12 @@
     padding: 0 0 5px 5px;
     user-select: none;
     border-radius: 5px;
+    /* border: solid white 2px; */
     border: none;
     background-color: rgb(233, 233, 233);
-    box-shadow: 0 0 3px 0 rgb(84, 84, 84);
+    box-shadow: 0 0 3px 5px rgb(233, 233, 233);
+    /* background-color: rgb(224, 235, 255);
+    box-shadow: 0 0 10px 5px rgb(224, 235, 255); */
 }
 .section .step {
     font-size: 40px;
@@ -76,7 +79,7 @@
     font-family: "Nanum Gothic", sans-serif;
     font-family: "Nunito", sans-serif;
     font-weight: 900;
-    color: rgb(50, 63, 255);
+    color: #768fa9;
 
     /* background-image: url("");
     background-repeat: no-repeat;
@@ -93,8 +96,8 @@
     border-radius: 13px;
     /* box-shadow: 0 0 10px -2px rgb(121, 121, 121); */
 }
-.inputBox {
-}
+/* .inputBox {
+} */
 
 .process {
     align-items: left;
@@ -236,4 +239,8 @@ h2 {
 }
 .inputValue button:focus {
     outline: none;
+}
+
+.hi {
+    color: rgb(157, 0, 255);
 }

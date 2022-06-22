@@ -28,8 +28,8 @@ class EnterValue extends Component {
     };
 
     onSubmit = () => {
-        const { history } = this.props;
-        console.log("history :>> ", history);
+        const { pageLink } = this.props;
+
         const {
             user: { id, password },
         } = this.state;
@@ -38,8 +38,9 @@ class EnterValue extends Component {
             alert("아이디와 비밀번호를 확인하세요");
             return;
         } else {
-            history.push(`/select`);
+            pageLink.push(`/select`);
         }
+        //입력 id, password값을 Attendance.jsx 에서 사용가능하게
         // 이후 api 요청 하는 부분 필요
     };
     enterKey = (e) => {
@@ -53,6 +54,8 @@ class EnterValue extends Component {
         // const { explain, step, user } = this.state;
         const { onChangeInputText, onSubmit, enterKey } = this;
         // const { value, next, moodle } = this.props;
+        const { pageLink } = this.props;
+        console.log("pageLink EnterValue :>> ", pageLink);
         return (
             <>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />

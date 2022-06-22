@@ -15,6 +15,7 @@ class Graph extends PureComponent {
         attendance: [], //[[수업1의 전체출석], [수업2의 전체출석], ...]
         lastAttendance: [], //출석에 맞는 id값
         classes: [], //들어야하는 주차 목록
+        result: [],
         status: [], //16주차를 해야됨
     };
 
@@ -82,11 +83,11 @@ class Graph extends PureComponent {
         const { week } = this.props;
         const _lastAttendance = _attendanceWeek.map((item, index) => {
             if (item[week - 1] === "O") {
-                return "attendance";
+                return "attendance"; //완강
             } else if (item[week - 1] === "▲") {
-                return "late";
+                return "late"; //지각
             } else if (item[week - 1] === "X") {
-                return "absence";
+                return "absence"; //하나도 안 들은거
             } else {
                 return "early";
             }
@@ -117,27 +118,38 @@ class Graph extends PureComponent {
         this.takeClass(_class);
     };
     takeClass = (_class) => {
+        // console.log("_class :>> ", _class);
         const __class = [..._class].map((item, index) =>
-            item.map((item1) => item1)
+            [...item].map((item1) => [...item1].sort())
         );
-        // console.log("__class :>> ", __class);
-        __class.map((item) => item.map((item1) => item1.sort()));
+        //sort() 원래배열까지 영향
 
+        console.log("__class :>> ", __class);
         const ___class = __class.map((item1, item2) =>
             item1.map((item2, index2) => item2[0])
         );
-        // console.log("___class :>> ", ___class);
         const _classes = ___class[0].map((item1, index1) =>
             ___class.map((item, index) => item[index1])
         );
-        // console.log("_classes :>> ", _classes);
 
         this.setState({
             classes: _classes,
         });
     };
     HMclasses = (_attendance) => {
-        const { week } = this.props;
+        const { week } = this.props; // 0~15
+        const weeks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        const items = [0, 1, 2, 3, 4, 5, 6]; // 0~6 7개의 수업
+        // console.log("week :>> ", week);
+        // console.log("_attendance :>> ", _attendance);
+
+        const result = items.map((item) => _attendance[item][week - 1]);
+
+        // console.log("result :>> ", result);
+
+        this.setState({
+            result: result,
+        });
         // console.log("_attendance :>> ", _attendance);
         // 주차별 전체 attendance
         // const _HMclasses = _attendance.map((item2, index2) =>
@@ -154,9 +166,11 @@ class Graph extends PureComponent {
             attendanceWeek,
             lastAttendance,
             classes,
+            result,
         } = this.state;
         const { week } = this.props;
-        // console.log("attendance :>> ", attendance);
+        // console.log("attendanceWeek :>> ", attendanceWeek);
+
         return (
             <div className="graghWhole">
                 <div className="week-th">
@@ -165,10 +179,14 @@ class Graph extends PureComponent {
                 <div className="gragh">
                     {count.map((item, index) => (
                         <div id={lastAttendance[index]} key={index.toString()}>
-                            {classes.length !== 0 && classes[week - 1][index]}/
-                            <span>{4}</span>
-                            {/* {classes.length !== 0 &&
-                                attendance[week - 1].length} */}
+                            {classes.length !== 0 && classes[week - 1][index]}
+                            <span>
+                                {attendanceWeek.length !== 0 &&
+                                attendanceWeek[index][week - 1] === "O"
+                                    ? "완강"
+                                    : result.length !== 0 &&
+                                      `/ ${result[index].length}`}
+                            </span>
                         </div>
                     ))}
                 </div>

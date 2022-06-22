@@ -13,8 +13,6 @@ class Main extends PureComponent {
                 id: "",
                 password: "",
             },
-            // id: "",
-            // password: "",
         };
     }
 
@@ -32,7 +30,7 @@ class Main extends PureComponent {
 
     onSubmit = () => {
         const { history } = this.props;
-        console.log("history :>> ", history);
+        // console.log("history :>> ", history);
         const {
             user: { id, password },
         } = this.state;
@@ -54,10 +52,11 @@ class Main extends PureComponent {
     render() {
         const { explain, step, user } = this.state;
         const { onChangeInputText, onSubmit, enterKey } = this;
-        const { value, next, moodle } = this.props;
+        const { value, next, moodle, history } = this.props;
+        console.log("history :>> ", history);
         return (
             <>
-                <EnterValue></EnterValue>
+                <EnterValue pageLink={history} />
                 <div id="whole">
                     <div className="stance">
                         <div className="section">
