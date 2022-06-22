@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* font-family: "Nanum Gothic", sans-serif;
+    font-weight: 700; */
+}
+#classWhole {
+    margin: 80px 0 0 0;
+    position: absolute;
+    transform: translate(100px, 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 170px;
+}
+#className {
+    width: 200px;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    height: 18px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: gray;
+    /* color: rgb(108, 108, 212); */
+}
+.color1 {
+    background-color: rgb(255, 38, 0);
+    border: solid 0.5px rgb(255, 38, 0);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+
+    margin-left: 5px;
+}
+.color2 {
+    background-color: rgb(255, 153, 0);
+    border: solid 0.5px rgb(255, 153, 0);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+.color3 {
+    background-color: rgb(198, 206, 106);
+    border: solid 0.5px rgb(198, 206, 106);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+.color4 {
+    background-color: rgb(56, 176, 0);
+    border: solid 0.5px rgb(56, 176, 0);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+.color5 {
+    background-color: rgb(37, 77, 255);
+    border: solid 0.5px rgb(37, 77, 255);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+.color6 {
+    background-color: rgb(98, 0, 255);
+    border: solid 0.5px rgb(98, 0, 255);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+.color7 {
+    background-color: rgb(104, 212, 255);
+    border: solid 0.5px rgb(104, 212, 255);
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}

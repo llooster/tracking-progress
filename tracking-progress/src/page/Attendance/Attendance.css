@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+/* #whole {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+} */
+
+.graghPart {
+    width: 710px;
+    height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    overflow: scroll;
+    padding-left: 50px;
+}
+.graghSet {
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 30px;
+    /* border-radius: 20px;
+    box-shadow: 0 0 7px 1px rgb(159, 159, 159); */
+}

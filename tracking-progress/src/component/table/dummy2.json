@@ -1,0 +1,35 @@
+[
+    {
+        "course": {
+            "name": "긍정마인드와인맥만들기"
+        },
+        "progress": [
+            [
+                {
+                    "name": "1교시",
+                    "attendance": "O",
+                    "attendanceWeek": "X"
+                },
+                {
+                    "name": "2교시",
+                    "attendance": "▲"
+                },
+                {
+                    "name": "3교시",
+                    "attendance": "X"
+                }
+            ],
+            [
+                {
+                    "name": "1교시",
+                    "attendance": "O",
+                    "attendanceWeek": "O"
+                },
+                {
+                    "name": "2교시",
+                    "attendance": "O"
+                }
+            ]
+        ]
+    }
+]

@@ -1,18 +1,57 @@
 import React, { Component } from "react";
-import Login from "./Login/Login";
-// import GetValue from "./GetTheValue/GetValue";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import Login from "../page/Home/Login/Login";
+// import GetValue from "../page/Home/GetTheValue/GetValue";
+import EnterValue from "../page/Home/EnterTheValue/EnterValue";
+import LeftBar from "../component/LeftBar";
+import Attendance from "../page/Attendance";
+import Main from "../page/Home/Main";
+
+// import ClassTest from "../page/ClassTest";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            page: {
-                id: 1,
-            },
-        };
-    }
+    state = {
+        id: 1,
+        step: ["Step 1. Login", "Attendance"],
+        explain: ["induk 사이트에 로그인 합니다", "출석현황"],
+        next: ["next", "back"],
+        moodle: "",
+    };
+
+    inputValue = (e) => {
+        this.setState({
+            moodle: e.target.value,
+        });
+    };
+    value = () => {
+        var { moodle } = this.state;
+        console.log(moodle);
+    };
+    enterKey = (e) => {
+        if (e.key === "Enter") {
+            this.value();
+            // (엔터키 활성화)
+        }
+    };
     render() {
-        return <Login />;
+        // const { inputValue, value, enterKey } = this;
+        const { id, step, explain, next, moodle } = this.state;
+
+        return (
+            <>
+                <LeftBar />
+                <Switch>
+                    <Route exact path="/" component={Main} />
+                    <Route path="/select/">
+                        <Attendance
+                            step={step[1]}
+                            explain={explain[1]}
+                            moodle={moodle}
+                        />
+                    </Route>
+                </Switch>
+            </>
+        );
     }
 }
 
